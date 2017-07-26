@@ -45,13 +45,13 @@
 		padding: 5px 10px;
 	}
 	&__menu {
-		text-align: center;
 		display: none;
+		text-align: center;
 		li {
 			padding: 5px 0;
 			a {
 				color: white;
-				display: none;
+				display: block;
 				height: 100%;
 				width: 100%;
 				&:hover {

@@ -23,11 +23,6 @@
 	&__menu { 
 		&.open{
 			display: block;
-			li {
-				a {
-					display: block;
-				}
-			}
 		}
 	}
 }
