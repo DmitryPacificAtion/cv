@@ -1,0 +1,100 @@
+.wallpaper {
+	background: url('../img/home-bg.jpeg') center center no-repeat;
+	background-size: cover;
+	position: absolute;
+	height: 600px;
+	width: 100%;
+	z-index: 1000;
+}
+.position {
+	color: $green;
+	margin: 0 auto 165px;
+	padding-top: 300px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 320px;
+	&-wrap {
+		background-color: rgba(0,0,0,0.5);
+		padding: 10px 5px;
+		position: relative;
+		z-index: 1010;
+	}
+	&__name {
+		border-top: 2px solid $green;
+		border-bottom: 2px solid $green;
+		font-size: rem(21);
+		padding: 5px 0;
+	}
+	&__learn-more {
+		background-color: transparent;
+		border: 2px solid $green;
+		font-weight: bold;
+		padding: 10px 25px; 
+		text-transform: uppercase;
+	}
+}
+.about{
+	&__logo {
+		color: $green;
+		display: inline-block;
+		font-family: 'Pacifico';
+		text-shadow: 2px 2px 6px black;
+	}
+	&__header {
+		background-color: $dark-bg;
+		padding: 5px 10px;
+	}
+	&__menu {
+		text-align: center;
+		display: none;
+		li {
+			padding: 5px 0;
+			a {
+				color: white;
+				display: none;
+				height: 100%;
+				width: 100%;
+				&:hover {
+					color: $green;
+				}
+			}
+		}
+	}
+}
+.burger {
+	display: inline-block;
+	float: right;
+	&:after {
+		content: '';
+		clear: both;
+	}
+	button {
+		background-color: $dark-txt;
+		@include set-box-shadow (2px, 2px, 2px);
+		border: none;
+		height: 20px;
+		width: 20px;
+		&:active {
+			@include set-box-shadow (0, 0, 0);
+			transition: all 0.4s ease;
+		}
+	}
+	&__line, &__line:after, &__line:before {
+		content: '';
+		background-color: $dark-bg;
+		display: block;
+		height: 2px;
+		margin: 0 auto;
+		position: relative;
+		transition: all 0.4s ease;
+		width: 14px;
+	}
+	&__line:before {
+		top: -4px;
+		transition: all 0.4s ease;
+	}
+	&__line:after {
+		bottom: -2px;
+		transition: all 0.4s ease;
+	}
+}

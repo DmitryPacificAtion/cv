@@ -1,0 +1,33 @@
+.burger {
+	&.open {
+		button {
+			@include set-box-shadow (0, 0, 0);
+			transition: all 0.4s ease;
+		}
+		.burger__line {
+			transform: rotate(45deg);
+			transition: all 0.4s ease;
+			&:before {
+				transform: rotate(90deg);
+				top: 0;
+				transition: all 0.4s ease;
+			}
+			&:after {
+				height: 0;
+				transition: all 0.4s ease;
+			}
+		}
+	}
+}
+.about{
+	&__menu { 
+		&.open{
+			display: block;
+			li {
+				a {
+					display: block;
+				}
+			}
+		}
+	}
+}
