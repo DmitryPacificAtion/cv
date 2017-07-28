@@ -9,6 +9,9 @@ function ChinaString (positionIndex, v_stringLen = 500) {
 		// debugger;
 		row[positionIndex].innerHTML = getString();
 	}
+	this.setIntr = function() {
+		setInterval(this.сhinaString, 100);
+	}
 	var getString = function () {
 		if (v_string.length < v_stringLen) 
 			return v_string += '<span>' + alphabet[getRandomInt(0, 299)] + '</span>';
@@ -18,15 +21,13 @@ function ChinaString (positionIndex, v_stringLen = 500) {
 		return v_string;
 	}
 }
-
 function stringGenerator() {
 	// debugger;
 	return new ChinaString(getRandomInt(0, 27));
 }
-
 function getRandomInt(min, max) {
 	return Math.floor(Math.random() * (max - min)) + min;
 }
 
 var str = stringGenerator();
-setInterval('str.сhinaString()', 100);
+setInterval('stringGenerator().setIntr()', 500)
