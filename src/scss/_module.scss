@@ -12,7 +12,7 @@
 	padding-top: 300px;
 	text-align: center;
 	text-transform: uppercase;
-	width: 320px;
+	width: $mob;
 	&-wrap {
 		background-color: rgba(0,0,0,0.5);
 		padding: 10px 5px;
@@ -42,7 +42,8 @@
 	}
 	&__header {
 		background-color: $dark-bg;
-		padding: 5px 10px;
+		padding-top: 5px;
+		padding-bottom: 5px;
 	}
 	&__menu {
 		display: none;
@@ -76,7 +77,7 @@
 		width: 20px;
 		&:active {
 			@include set-box-shadow (0, 0, 0);
-			transition: all 0.4s ease;
+			@include transition();
 		}
 	}
 	&__line, &__line:after, &__line:before {
@@ -86,15 +87,30 @@
 		height: 2px;
 		margin: 0 auto;
 		position: relative;
-		transition: all 0.4s ease;
+		@include transition();
 		width: 14px;
 	}
 	&__line:before {
 		top: -4px;
-		transition: all 0.4s ease;
+		@include transition();
 	}
 	&__line:after {
 		bottom: -2px;
-		transition: all 0.4s ease;
+		@include transition();
+	}
+}
+.aspirations {
+	&__item {
+		margin-top: 20px;
+		padding: 10px;
+		&:hover {
+			@include set-box-shadow (0, 0, 5px, rgba(0,0,0,0.2));
+			@include transition();
+		}
+		h2 {
+			color: $dark-txt;
+			text-align: center;
+			text-transform: uppercase;
+		}
 	}
 }

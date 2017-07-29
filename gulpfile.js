@@ -43,8 +43,10 @@ gulp.task('img', function(){
 	});
 
 gulp.task('watch', ['sass', 'js'], function () {
-	gulp.watch('./src/scss/**/*.scss', ['sass']);
+	gulp.watch('./src/scss/*.scss', ['sass']);
 	gulp.watch('./src/js/*.js');
 	});
 
-gulp.task('default', ['watch']);
+gulp.task('default', ['watch'], function() {
+   gulp.start('sass', 'js');
+ });

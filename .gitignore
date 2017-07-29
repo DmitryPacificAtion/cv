@@ -2,3 +2,4 @@ node_modules
 build
 webpack.config.js
 package-webpack.json
+npm-debug.log

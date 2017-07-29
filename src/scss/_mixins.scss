@@ -35,6 +35,9 @@
 	$desktop:1280px;
 */ 
 }
+@mixin transition($who: all, $time: 0.4s, $animate: ease) {
+	transition: $who $time $animate;
+}
 @function rem($pixels, $context: $baseFontSize) {
 	@if (unitless($pixels)) {
 		$pixels: $pixels * 1px;
