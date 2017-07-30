@@ -19,9 +19,9 @@
 		}
 	}
 }
-.about{
+.about {
 	&__menu { 
-		&.open{
+		&.open {
 			display: block;
 		}
 	}
@@ -33,3 +33,21 @@
 @keyframes f70 { from { width: 0; } to { width: 70%; }}
 @keyframes f65 { from { width: 0; } to { width: 65%; }}
 @keyframes f60 { from { width: 0; } to { width: 60%; }}
+.philosophy {
+	.slider {
+		&-content {
+			&-item.active {
+				display: block;
+			}
+		}
+		&-dots {
+			&-item.active {
+				button {
+					&:before {
+						background-color: $green;
+					}
+				}
+			}
+		}
+	}
+}

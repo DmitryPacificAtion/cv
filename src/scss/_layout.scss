@@ -1,23 +1,24 @@
-.home, .about, .skills, .resume, .testimonials, .portfolio, .contacts {
-	max-width: 1600px;
+.aspirations, .skills, .resume, .education, .philosophy, .portfolio, .contacts {
+	padding-top: 50px;
 }
 .home {
 	position: relative;
 }
-.about {
-
+.wallpaper {
+	background: url('../img/home-bg.jpeg') center center no-repeat;
+	background-size: cover;
+	position: absolute;
+	height: 600px;
+	width: 100%;
+	z-index: 1000;
 }
-.skills {
-
+.aspirations, .education, .work-experience, .philosophy {
+	padding-bottom: 50px;
 }
-.resume {
-
-}
-.testimonials {
-
-}
-.portfolio {
-
+.philosophy {
+	background-color: $grey-bg;
+	font-family: 'Roboto-Italic';
+	font-style: italic;
 }
 .contacts {
 
