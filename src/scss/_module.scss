@@ -1,6 +1,6 @@
 .position {
-	margin: 0 auto 125px;
-	padding-top: 300px;
+	margin: 0 auto 95px;
+	padding-top: 150px;
 	text-align: center;
 	text-transform: uppercase;
 	width: $mob;
@@ -16,6 +16,9 @@
 		border-bottom: 2px solid $green;
 		font-size: rem(21);
 		padding: 5px 0;
+	}
+	.btn-cta {
+		margin-top: 10px;
 	}
 }
 .btn-cta {
@@ -83,14 +86,17 @@
 		clear: both;
 	}
 }
+.dropdown-btn {
+	background-color: $dark-txt;
+	border-radius: 4px;
+	@include set-box-shadow (2px, 2px, 2px);
+	border: none;
+	height: 25px;
+	width: 25px;
+}
 .burger {
 	display: inline-block;
-	button {
-		background-color: $dark-txt;
-		@include set-box-shadow (2px, 2px, 2px);
-		border: none;
-		height: 25px;
-		width: 25px;
+	.dropdown-btn {
 		&:active {
 			@include set-box-shadow (0, 0, 0);
 			@include transition();
@@ -117,8 +123,8 @@
 }
 .language {
 	background-color: $dark-txt;
-	border-radius: 3px;
 	// display: inline-block;
+	border-radius: 4px;
 	height: 25px;
 	position: absolute;
 	right: 55px;
@@ -126,13 +132,12 @@
 	width: 25px;
 	&__list {
 		background-color: $dark-txt;
-		border-radius: 3px;
-		display: inline-block;
+		border-radius: 4px;
+		display: none;
 		&__item {
 			height: 25px;
 			width: 25px;
-			&:last-child {
-				display: none;
+			&:nth-child(n-1) {
 				margin-top: 5px;
 			}
 			a {
@@ -330,6 +335,9 @@
 		label {
 			margin-bottom: 5px;
 		}
+		textarea {
+			height: 100px;
+		}
 	}
 }
 .text-center {
@@ -373,13 +381,13 @@ footer {
 				}
 			}
 			.fb:after {
-					content: '\f09a';
+				content: '\f09a';
 			}
 			.vk:after {
-					content: '\f189';
+				content: '\f189';
 			}
 			.skype:after {
-					content: '\f17e';
+				content: '\f17e';
 			}
 		}
 	}

@@ -1,10 +1,15 @@
 var burger = document.querySelector('.burger');
 var menu = document.querySelector('.about__menu');
 var language = document.querySelector('.language');
+var languageList = document.querySelector('.language__list');
 // Выпадающее меню
-function dropdown(elem, target) {
-	elem.addEventListener('click', function(){
+function dropdown(elem, target, statfull = false) {
+	elem.addEventListener('click', function(event){
 		elem.classList.toggle('open');
+		if (statfull) {
+			var state = event.target.innerHTML;
+			elem.firstElementChild.innerHTML = state
+		}
 		if ( elem.classList.contains('open') ) {
 			target.classList.add('open');
 		}
@@ -45,10 +50,12 @@ function slider() {
 	function setEventsOnSlider() {
 		var sliderDots = document.querySelector('.slider-dots');
 		sliderDots.addEventListener('click', function(event) {
-			removeActive();
-			// С помощью дата атрибутов вычисляем елемент на котором произошел клик
-			i = event.target.parentElement.getAttribute('data-slider-dot') - 1;
-			addActive();
+			if (event.target.parentElement.hasAttribute('data-slider-dot')){
+				removeActive();
+				// С помощью дата атрибутов вычисляем елемент на котором произошел клик
+				i = event.target.parentElement.getAttribute('data-slider-dot') - 1;
+				addActive();
+			}
 		});
 	}
 	setEventsOnSlider();
@@ -57,13 +64,11 @@ function slider() {
 }
 dropdown(burger, menu);
 /** TODO:
-	- Написать скрипт переключения языка
 	- Написать php email
 	- Написать валидакию формы
 	- Написать ajax уведомления о доставке почты
 	- Реализовать мультиязычность
-	- Поправить баг со слайдером и texrarea
-*/
-// dropdown(language.firstElementChild.lastElementChild);
-// console.log(language.firstElementChild.lastElementChild);
-slider();
+	*/
+	dropdown(language, languageList, true);
+	console.log(language.languageList);
+	slider();
