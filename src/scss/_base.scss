@@ -33,3 +33,10 @@ p {
 hr {
 	margin: 20px 0;
 }
+label, input {
+	display: block;
+}
+footer {
+	background-color: $darkest;
+	color: $grey-txt;
+}

@@ -1,13 +1,16 @@
-// Выпадающее меню
 var burger = document.querySelector('.burger');
 var menu = document.querySelector('.about__menu');
-burger.addEventListener('click', function(){
-	burger.classList.toggle('open');
-	if ( burger.classList.contains('open') ) {
-		menu.classList.add('open');
-	}
-	else menu.classList.remove('open'); 
-});
+var language = document.querySelector('.language');
+// Выпадающее меню
+function dropdown(elem, target) {
+	elem.addEventListener('click', function(){
+		elem.classList.toggle('open');
+		if ( elem.classList.contains('open') ) {
+			target.classList.add('open');
+		}
+		else target.classList.remove('open'); 
+	});
+}
 
 // Слайдер
 var sliderContentItems = document.querySelectorAll('.slider-content-item');
@@ -52,4 +55,15 @@ function slider() {
 	setInterval( startSider, 4500 );
 	clearInterval( startSider );
 }
+dropdown(burger, menu);
+/** TODO:
+	- Написать скрипт переключения языка
+	- Написать php email
+	- Написать валидакию формы
+	- Написать ajax уведомления о доставке почты
+	- Реализовать мультиязычность
+	- Поправить баг со слайдером и texrarea
+*/
+// dropdown(language.firstElementChild.lastElementChild);
+// console.log(language.firstElementChild.lastElementChild);
 slider();

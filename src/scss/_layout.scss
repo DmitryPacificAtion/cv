@@ -12,7 +12,7 @@
 	width: 100%;
 	z-index: 1000;
 }
-.aspirations, .education, .work-experience, .philosophy {
+.aspirations, .education, .work-experience, .portfolio, .philosophy {
 	padding-bottom: 50px;
 }
 .philosophy {
@@ -21,5 +21,6 @@
 	font-style: italic;
 }
 .contacts {
-
+	background-color: $dark-bg;
+	color: white;
 }

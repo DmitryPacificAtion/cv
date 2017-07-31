@@ -42,6 +42,7 @@
 	}
 	&__menu {
 		display: none;
+		margin-top: 10px;
 		text-align: center;
 		li {
 			padding: 5px 0;
@@ -75,19 +76,21 @@
 		padding-bottom: 20px;
 	}
 }
-.burger {
-	display: inline-block;
+.dopdown-wrap {
 	float: right;
 	&:after {
 		content: '';
 		clear: both;
 	}
+}
+.burger {
+	display: inline-block;
 	button {
 		background-color: $dark-txt;
 		@include set-box-shadow (2px, 2px, 2px);
 		border: none;
-		height: 20px;
-		width: 20px;
+		height: 25px;
+		width: 25px;
 		&:active {
 			@include set-box-shadow (0, 0, 0);
 			@include transition();
@@ -110,6 +113,34 @@
 	&__line:after {
 		bottom: -2px;
 		@include transition();
+	}
+}
+.language {
+	background-color: $dark-txt;
+	border-radius: 3px;
+	// display: inline-block;
+	height: 25px;
+	position: absolute;
+	right: 55px;
+	text-align: center;
+	width: 25px;
+	&__list {
+		background-color: $dark-txt;
+		border-radius: 3px;
+		display: inline-block;
+		&__item {
+			height: 25px;
+			width: 25px;
+			&:last-child {
+				display: none;
+				margin-top: 5px;
+			}
+			a {
+				color: $dark-bg;
+				font-size: rem(16);
+				margin: 0 auto;
+			}
+		}
 	}
 }
 .aspirations {
@@ -276,6 +307,79 @@
 				opacity: 1;
 				transition: all .4s ease-in-out;
 				line-height: 120px;
+			}
+		}
+	}
+}
+.contacts {
+	h2 {	
+		color: white;
+	}
+	&__form {
+		padding-bottom: 50px;
+		padding-top: 50px;
+		label, input, textarea {
+			width: 100%;
+		}
+		input, textarea {
+			background-color: $inputs-bg;
+			border: none;
+			margin-bottom: 20px;
+			padding: 10px;
+		}
+		label {
+			margin-bottom: 5px;
+		}
+	}
+}
+.text-center {
+	text-align: center;
+}
+.btn-contact {
+	background-color: $darkest;
+	border: none;
+	color: white;
+	font-weight: bold;
+	margin-bottom: 10px;
+	margin-top: 30px;
+	padding: 10px 25px; 
+	text-transform: uppercase;
+}
+footer {
+	padding-bottom: 20px;
+	padding-top: 20px;
+	text-align: center;
+	.socials {
+		text-align: center;
+		margin-top: 10px;
+		&-icons {
+			display: inline-block;
+			margin-left: 3px;
+			margin-right: 3px;
+			a {
+				background-color: $grey-txt;
+				border-radius: 50%;
+				display: block;
+				height: 25px;
+				width: 25px;
+				&:after {
+					content: '';
+					color: $darkest;
+					font-family: 'FontAwesome';
+					font-size: rem(16);
+					font-weight: bold;
+					position: relative;
+					top: 4px;
+				}
+			}
+			.fb:after {
+					content: '\f09a';
+			}
+			.vk:after {
+					content: '\f189';
+			}
+			.skype:after {
+					content: '\f17e';
 			}
 		}
 	}

@@ -19,6 +19,13 @@
 		}
 	}
 }
+.language {
+	&__list.open {
+		.language__list__item:last-child {
+			display: block;
+		}
+	}
+}
 .about {
 	&__menu { 
 		&.open {
