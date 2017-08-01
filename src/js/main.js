@@ -68,7 +68,7 @@ dropdown(burger, menu);
 	- Написать валидакию формы
 	- Написать ajax уведомления о доставке почты
 	- Реализовать мультиязычность
-	*/
-	dropdown(language, languageList, true);
-	console.log(language.languageList);
-	slider();
+*/
+dropdown(language, languageList, true);
+console.log(language.languageList);
+slider();
