@@ -1,9 +1,10 @@
 @mixin set-cols-width ($num, $padding: 15px) {
-	@if ($num > 0 && $num < 13){
-		width: $num * 100/12 * 1%;
+	@if ($num > 0 && $num < 13) {
+		float: left;
 		padding: $padding;
+		width: $num * 100/12 * 1%;
 	}
-	@else{
+	@else {
 		width: auto;
 	}
 }
@@ -18,14 +19,14 @@
 		box-shadow: $top $left $blur $color;
 	}
 }
-@mixin respond-to ($screen, $lower-screen: false) {
+/*@mixin respond-to ($screen, $lower-screen: false) {
 	@if ($lower-screen) {
 		@media only screen and (min-width: $lower-screen) and (max-width: $screen) { @content; }
 	}
 	@else {
 		@media only screen and (max-width: $screen) { @content; }
 	}
-/* *** Available variables *** 
+ *** Available variables *** 
 	$mob: 320px;
 	$mob-lan: 480px;
 	$huge: 640px;
@@ -33,8 +34,8 @@
 	$medium: 992px;
 	$pda-lan: 1024px;
 	$desktop: 1280px;
-*/ 
-}
+ 
+}*/ 
 @mixin transition ($who: all, $time: 0.4s, $animate: ease) {
 	transition: $who $time $animate;
 }

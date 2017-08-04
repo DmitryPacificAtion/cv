@@ -22,12 +22,14 @@
 .language.open {
 	.language__list.open {
 		display: inline-block;
+		position: relative;
+		top: 5px;
 	}
 }
 .about {
 	&__menu { 
 		&.open {
-			display: block;
+			display: flex;
 		}
 	}
 }
@@ -56,3 +58,162 @@
 		}
 	}
 }
+@media screen and (min-width: $mob-lan) {
+	.position { 
+		width: 420px;
+		&-wrap {
+			padding: 10px 55px;
+		}
+	}
+	.about{
+		&__logo {
+			font-size: rem(18);
+		}
+		&__header {
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		&__menu {
+			li {
+				padding: 10px 0;
+				a {
+					font-size: rem(16);
+				}
+			}
+		}
+	}
+	.dropdown-btn {
+		font-size: rem(16);
+		height: 35px;
+		width: 35px;
+	}
+	.language {
+		right: 70px;
+		&__list_item {
+			font-size: rem(16);
+			height: 35px;
+			width: 35px;
+		}
+		&.open {
+			.language__list.open {
+				top: 12px;
+			}
+		}
+	}
+	.portfolio {
+		.wrap {
+			display: flex;
+			flex-flow: row;
+			justify-content: space-around;
+		}
+	}
+}
+@media screen and (min-width: $pda) {
+	.dropdown-btn {
+		font-size: rem(21);
+	}
+	.language {
+		right: 75px;
+		&__list_item {
+			font-size: rem(21);
+		}
+	}
+	.about {
+		&__main {
+			&__photo {
+				// @include set-cols-width(6, 0);
+			} 
+			&__description {
+				// @include set-cols-width(6);
+			}
+		}
+	}
+	.portfolio {
+		&_item {
+			a, a:after {
+				height: 160px;
+				width: 160px;
+			}
+			a:hover:after {
+				line-height: 160px;
+			}
+		}
+	}
+	.contacts {
+		&__form {
+			margin: 0 auto;
+			width: 50%;
+		}
+	}
+}
+@media screen and (min-width: $pda-lan) {
+	.burger {
+		display: none;
+	}
+	.about {
+		&__header {
+			align-items: baseline;
+			display: flex;
+			flex-direction: row;
+			height: 70px;
+			padding-bottom: 0;
+			padding-top: 0;
+		}
+		&__logo {
+			flex-grow: 100;
+			order: 1;
+		}
+		&__menu {
+			display: inline-flex;
+			flex-grow: 10;
+			margin-top: 0;
+			order: 2;
+			li {
+				display: inline-block;
+				padding: 0;
+				a {
+					padding-bottom: 25px;
+					padding-top: 25px;
+					width: 80px;
+				}
+			}
+		}
+	}
+	.dopdown-wrap {
+		flex-grow: 2;
+		float: none;
+		order: 3;
+	}
+	.language {
+		position: static;
+		&__list_item {
+			font-size: rem(24);
+		}
+		&.open {
+			.language__list.open {
+				top: 19px;
+			}
+		}
+	}
+	.dropdown-btn {
+		font-size: rem(24);
+	}
+	.aspirations {
+		flex-flow: row;
+		&_item {
+			padding: 10px 20px 20px;
+			h2 {
+				text-align: left;
+			}
+		}
+	}
+}
+//Media brackpoints
+/* 
+$mob: 320px;
+$mob-lan: 480px;
+$huge: 600px;
+$pda: 768px;
+$medium: 992px;
+$pda-lan: 1024px;
+$desktop: 1280px; */
