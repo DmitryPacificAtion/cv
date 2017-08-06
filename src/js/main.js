@@ -18,8 +18,8 @@ function dropdown(elem, target, statfull = false) {
 }
 
 // Слайдер
-var sliderContentItems = document.querySelectorAll('.slider-content-item');
-var sliderDotsItems = document.querySelectorAll('.slider-dots-item');
+var sliderContentItems = document.querySelectorAll('.slider__content_item');
+var sliderDotsItems = document.querySelectorAll('.slider__dots_item');
 function slider() {
 	var i = 0, len = sliderDotsItems.length - 1;
 	function findActive() {
@@ -48,7 +48,7 @@ function slider() {
 		addActive();
 	}
 	function setEventsOnSlider() {
-		var sliderDots = document.querySelector('.slider-dots');
+		var sliderDots = document.querySelector('.slider__dots');
 		sliderDots.addEventListener('click', function(event) {
 			if (event.target.parentElement.hasAttribute('data-slider-dot')){
 				removeActive();
@@ -68,7 +68,7 @@ dropdown(burger, menu);
 	- Написать валидакию формы
 	- Написать ajax уведомления о доставке почты
 	- Реализовать мультиязычность
-*/
-dropdown(language, languageList, true);
-console.log(language.languageList);
-slider();
+	*/
+	dropdown(language, languageList, true);
+	console.log(language.languageList);
+	slider();

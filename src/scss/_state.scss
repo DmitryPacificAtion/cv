@@ -42,13 +42,13 @@
 @keyframes f60 { from { width: 0; } to { width: 60%; }}
 .philosophy {
 	.slider {
-		&-content {
-			&-item.active {
+		&__content {
+			&_item.active {
 				display: block;
 			}
 		}
-		&-dots {
-			&-item.active {
+		&__dots {
+			&_item.active {
 				button {
 					&:before {
 						background-color: $green;
@@ -100,6 +100,16 @@
 			}
 		}
 	}
+	.skills {
+		&__list {	
+		}
+		.wrap, &__level {
+			height: 20px;
+		}
+		&__level {
+			padding-top: 2px;
+		}
+	}
 	.portfolio {
 		.wrap {
 			display: flex;
@@ -118,13 +128,34 @@
 			font-size: rem(21);
 		}
 	}
+	.aspirations {
+		flex-flow: row;
+		&_item {
+			padding: 10px 20px 20px;
+			h2 {
+				text-align: left;
+			}
+		}
+	}
 	.about {
+		&:after {
+			content: '';
+			clear: both;
+		}
 		&__main {
+			background-color: $grey-bg;
+			float: left;
+			margin-bottom: 50px;
 			&__photo {
-				// @include set-cols-width(6, 0);
-			} 
+				@include set-cols-width(6, 0);
+				.photo {
+					background-position: 20% 0;
+					height: 600px;
+				}
+			}
 			&__description {
-				// @include set-cols-width(6);
+				background-color: transparent;
+				@include set-cols-width(6);
 			}
 		}
 	}
@@ -147,6 +178,15 @@
 	}
 }
 @media screen and (min-width: $pda-lan) {
+	.position {
+		margin-bottom: 155px;
+		&-wrap {
+			padding: 30px 55px;
+		}
+	}
+	.wallpaper {
+		height: 500px;
+	}
 	.burger {
 		display: none;
 	}
@@ -178,6 +218,22 @@
 				}
 			}
 		}
+		&__photo {
+			.photo {
+				height: 450px;
+			}
+		}
+		.description {
+			&__list {
+				margin: 20px auto 0;
+				width: 85%;
+				&_item {
+					float: left;
+					margin-top: 20px;
+					width: 50%;
+				}
+			}
+		}
 	}
 	.dopdown-wrap {
 		flex-grow: 2;
@@ -187,26 +243,23 @@
 	.language {
 		position: static;
 		&__list_item {
-			font-size: rem(24);
+			font-size: rem(18);
 		}
 		&.open {
 			.language__list.open {
-				top: 19px;
+				top: 17px;
 			}
 		}
 	}
 	.dropdown-btn {
-		font-size: rem(24);
+		font-size: rem(18);
 	}
-	.aspirations {
-		flex-flow: row;
-		&_item {
-			padding: 10px 20px 20px;
-			h2 {
-				text-align: left;
-			}
-		}
-	}
+	// .skills {
+	// 	&__description, &__list {
+	// 		@include set-cols-width(6, 0);
+	// 	}
+
+	// }
 }
 //Media brackpoints
 /* 
