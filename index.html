@@ -8,17 +8,17 @@
 	<script src="https://use.fontawesome.com/81b0a5a4d5.js"></script>
 </head>
 <body>
-	<section class="home">
+	<section class="home" id="home">
 		<div class="wallpaper">
 		</div>
 		<div class="position">
 			<div class="position-wrap">
 				<h1 class="position__name">Full Stack Developer</h1>
-				<button class="btn-cta">Learn More</button>
+				<a href="#about" class="btn-cta">Learn More</a>
 			</div>
 		</div>
 	</section>
-	<section class="about">
+	<section class="about" id="about">
 		<header class="about__header container">
 			<div class="about__logo">Dmitry Bruslik</div>
 			<div class="dopdown-wrap">
@@ -31,28 +31,26 @@
 				</div>
 				<div class="burger"><button class="dropdown-btn" id="btn-burger"><span class="burger__line"></span></button></div>
 			</div>
-			<nav class="about__menu">
-				<ul>
-					<li>
-						<a href="#home">Home</a>
-					</li>
-					<li>
-						<a href="#about">About me</a>
-					</li>
-					<li>
-						<a href="#skills">Skills</a>
-					</li>
-					<li>
-						<a href="#resume">Resume</a>
-					</li>
-					<li>
-						<a href="#portfolio">Portfolio</a>
-					</li>
-					<li>
-						<a href="#contacts">Contacts</a>
-					</li>
-				</ul>
-			</nav>
+			<ul class="about__menu" id="menu">
+				<li>
+					<a href="#home">Home</a>
+				</li>
+				<li>
+					<a href="#about">About me</a>
+				</li>
+				<li>
+					<a href="#skills">Skills</a>
+				</li>
+				<li>
+					<a href="#resume">Resume</a>
+				</li>
+				<li>
+					<a href="#portfolio">Portfolio</a>
+				</li>
+				<li>
+					<a href="#contacts">Contacts</a>
+				</li>
+			</ul>
 		</header>
 		<div class="aspirations container">
 			<div class="aspirations_item">
@@ -70,7 +68,7 @@
 		</div>
 		<main class="about__main">
 			<div class="about__main__photo"><div class="photo album"></div></div>
-			<div class="about__main__description container">
+			<div class="about__main__description">
 				<h2>Обо мне</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea recusandae dolores, at sed vero sequi consectetur atque alias nesciunt similique id ullam possimus, molestias, est dolorem animi vitae a laudantium eos neque dignissimos laboriosam quidem. Illum nemo deleniti velit quidem. Dolorum consequuntur debitis quas nobis quibusdam omnis quam vel, perspiciatis.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, ratione? Officiis necessitatibus atque suscipit ipsa, quod molestiae recusandae vero inventore.</p>
@@ -95,7 +93,7 @@
 				Joomla
 				Wordpress
 			</p>
-			<button class="btn-cta">Contact me</button>
+			<a href="#contacts" class="btn-cta">Contact me</a>
 		</div>
 		<ul class="skills__list">
 			<li>
@@ -105,16 +103,7 @@
 				<h3>MySQL</h3><div class="wrap"><div class="skills__level mysql"></div></div>
 			</li>
 			<li>
-				<h3>MVC</h3><div class="wrap"><div class="skills__level mvc"></div></div>
-			</li>
-			<li>
-				<h3>OOP</h3><div class="wrap"><div class="skills__level oop"></div></div>
-			</li>
-			<li>
-				<h3>JavaScript</h3><div class="wrap"><div class="skills__level js"></div></div>
-			</li>
-			<li>
-				<h3>jQuery</h3><div class="wrap"><div class="skills__level jq"></div></div>
+				<h3>JavaScript, jQuery</h3><div class="wrap"><div class="skills__level js"></div></div>
 			</li>
 			<li>
 				<h3>ES6</h3><div class="wrap"><div class="skills__level es"></div></div>
@@ -129,41 +118,29 @@
 				<h3>SEO</h3><div class="wrap"><div class="skills__level seo"></div></div>
 			</li>
 			<li>
-				<h3>HTML5</h3><div class="wrap"><div class="skills__level html"></div></div>
-			</li>
-			<li>
-				<h3>CSS</h3><div class="wrap"><div class="skills__level css"></div></div>
+				<h3>CSS, HTML5</h3><div class="wrap"><div class="skills__level html-css"></div></div>
 			</li>
 			<li>
 				<h3>SCSS</h3><div class="wrap"><div class="skills__level scss"></div></div>
 			</li>
 			<li>
-				<h3>Gulp</h3><div class="wrap"><div class="skills__level gulp"></div></div>
+				<h3>Gulp, Webpack</h3><div class="wrap"><div class="skills__level packages"></div></div>
 			</li>
 			<li>
-				<h3>Webpack</h3><div class="wrap"><div class="skills__level webpack"></div></div>
-			</li>
-			<li>
-				<h3>Foundation</h3><div class="wrap"><div class="skills__level foundation"></div></div>
-			</li>
-			<li>
-				<h3>Bootstrap</h3><div class="wrap"><div class="skills__level bootstrap"></div></div>
+				<h3>Bootstrap, Foundation</h3><div class="wrap"><div class="skills__level frameworks"></div></div>
 			</li>
 			<li>
 				<h3>Email codding</h3><div class="wrap"><div class="skills__level email"></div></div>
 			</li>
 			<li>
-				<h3>Joomla</h3><div class="wrap"><div class="skills__level joomla"></div></div>
-			</li>
-			<li>
-				<h3>Wordpress</h3><div class="wrap"><div class="skills__level wp"></div></div>
+				<h3>Wordpress, Joomla</h3><div class="wrap"><div class="skills__level cms"></div></div>
 			</li>
 			<li>
 				<h3>Photoshop</h3><div class="wrap"><div class="skills__level ps"></div></div>
 			</li>
 		</ul>
 	</section>
-	<section class="resume">
+	<section class="resume" id="resume">
 		<div class="resume__download container">
 			<h2>Resume</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt sequi sapiente quas quod saepe repellat dolorum esse veniam dicta, omnis dolor quibusdam illo veritatis sit aperiam molestiae inventore alias deleniti aut ad, quo sunt deserunt modi suscipit eaque. Mollitia, maxime odio. Voluptatibus alias, quos quod blanditiis veniam! Dolor, quidem, eveniet!</p>
@@ -174,73 +151,82 @@
 				<h2>My Education</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis magnam ipsa labore adipisci consectetur fuga praesentium doloribus est deleniti, quae autem optio vel incidunt cupiditate itaque totam reiciendis provident dolor beatae, explicabo, nesciunt. Culpa cumque consequatur incidunt, ducimus ut. Quibusdam neque id, asperiores eveniet vel sunt quas explicabo facilis modi.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ad velit rem et nam sunt iure qui at obcaecati consequuntur.</p>
-				<ul class="education__institution">
-					<li>
-						<h3>NAU</h3>
-						<p class="activity-period">01.09.2007 &mdash; 27.02.2013</p>
-						<hr>
-						<p class="institution__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente reprehenderit magni ipsam ratione molestiae consequatur dolorum veritatis, veniam quis blanditiis.</p>
-					</li>
-					<li>
-						<h3>HTML Academy</h3>
-						<p class="activity-period">01.09.2007 &mdash; 27.02.2013</p>
-						<hr>
-						<p class="institution__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ea nisi qui cupiditate adipisci itaque error facere, dicta maiores cumque.</p>
-					</li>
-					<li>
-						<h3>Php Academy</h3>
-						<p class="activity-period">01.09.2007 &mdash; 27.02.2013</p>
-						<hr>
-						<p class="institution__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, sequi iusto nostrum atque. Quae dolorum rem dolores rerum, sint maxime!</p>
-					</li>
-				</ul>
 			</div>
-			<hr>
+			<ul class="institution">
+				<li>
+					<h3>NAU</h3>
+					<p class="activity-period">01.09.2007 &mdash; 27.02.2013</p>
+					<div class="activity-total">Specialist</div>
+					<hr>
+					<p class="institution__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente reprehenderit magni ipsam ratione molestiae consequatur dolorum veritatis, veniam quis blanditiis.</p>
+				</li>
+				<li>
+					<h3>HTML Academy</h3>
+					<p class="activity-period"> 2 month</p>
+					<!-- <div class="activity-total"></div> -->
+					<hr>
+					<p class="institution__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ea nisi qui cupiditate adipisci itaque error facere, dicta maiores cumque.</p>
+				</li>
+				<li>
+					<h3>Php Academy</h3>
+					<p class="activity-period">13.02.2017 &mdash; current time</p>
+					<!-- <div class="activity-total"></div> -->
+					<hr>
+					<p class="institution__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, sequi iusto nostrum atque. Quae dolorum rem dolores rerum, sint maxime!</p>
+				</li>
+			</ul>
 		</div>
+		<div class="container"><hr></div>
 		<div class="work-experience container">
 			<div class="global__description">
 				<h2>Work experience</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis magnam ipsa labore adipisci consectetur fuga praesentium doloribus est deleniti, quae autem optio vel incidunt cupiditate itaque totam reiciendis provident dolor beatae, explicabo, nesciunt. Culpa cumque consequatur incidunt, ducimus ut. Quibusdam neque id, asperiores eveniet vel sunt quas explicabo facilis modi.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ad velit rem et nam sunt iure qui at obcaecati consequuntur.</p>
-				<ul class="education__institution">
-					<li>
-						<h3>Ukrvet</h3>
-						<p class="activity-period">01.09.2007 &mdash; 27.02.2013</p>
-						<hr>
-						<p class="institution__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente reprehenderit magni ipsam ratione molestiae consequatur dolorum veritatis, veniam quis blanditiis.</p>
-					</li>
-					<li>
-						<h3>Agromat</h3>
-						<p class="activity-period">01.09.2007 &mdash; 27.02.2013</p>
-						<hr>
-						<p class="institution__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ea nisi qui cupiditate adipisci itaque error facere, dicta maiores cumque.</p>
-					</li>
-					<li>
-						<h3>Seo studio</h3>
-						<p class="activity-period">01.09.2007 &mdash; 27.02.2013</p>
-						<hr>
-						<p class="institution__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, sequi iusto nostrum atque. Quae dolorum rem dolores rerum, sint maxime!</p>
-					</li>
-					<li>
-						<h3>Berezin studio</h3>
-						<p class="activity-period">01.09.2007 &mdash; 27.02.2013</p>
-						<hr>
-						<p class="institution__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, sequi iusto nostrum atque. Quae dolorum rem dolores rerum, sint maxime!</p>
-					</li>
-					<li>
-						<h3>Fotos</h3>
-						<p class="activity-period">01.09.2007 &mdash; 27.02.2013</p>
-						<hr>
-						<p class="institution__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, sequi iusto nostrum atque. Quae dolorum rem dolores rerum, sint maxime!</p>
-					</li>
-					<li>
-						<h3>Petrovskogo plant</h3>
-						<p class="activity-period">01.09.2007 &mdash; 27.02.2013</p>
-						<hr>
-						<p class="institution__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, sequi iusto nostrum atque. Quae dolorum rem dolores rerum, sint maxime!</p>
-					</li>
-				</ul>
 			</div>
+			<ul class="institution">
+				<li>
+					<h3>Ukrvet</h3>
+					<p class="activity-period">01.09.2007 &mdash; 27.02.2013</p>
+					<div class="activity-total">6 month</div>
+					<hr>
+					<p class="institution__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente reprehenderit magni ipsam ratione molestiae consequatur dolorum veritatis, veniam quis blanditiis.</p>
+				</li>
+				<li>
+					<h3>Agromat</h3>
+					<p class="activity-period">01.09.2007 &mdash; 27.02.2013</p>
+					<div class="activity-total">6 month</div>
+					<hr>
+					<p class="institution__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ea nisi qui cupiditate adipisci itaque error facere, dicta maiores cumque.</p>
+				</li>
+				<li>
+					<h3>Seo studio</h3>
+					<p class="activity-period">01.09.2007 &mdash; 27.02.2013</p>
+					<div class="activity-total">6 month</div>
+					<hr>
+					<p class="institution__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, sequi iusto nostrum atque. Quae dolorum rem dolores rerum, sint maxime!</p>
+				</li>
+				<li>
+					<h3>Berezin studio</h3>
+					<p class="activity-period">01.09.2007 &mdash; 27.02.2013</p>
+					<div class="activity-total">6 month</div>
+					<hr>
+					<p class="institution__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, sequi iusto nostrum atque. Quae dolorum rem dolores rerum, sint maxime!</p>
+				</li>
+				<li>
+					<h3>Fotos</h3>
+					<p class="activity-period">01.09.2007 &mdash; 27.02.2013</p>
+					<div class="activity-total">6 month</div>
+					<hr>
+					<p class="institution__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, sequi iusto nostrum atque. Quae dolorum rem dolores rerum, sint maxime!</p>
+				</li>
+				<li>
+					<h3>Petrovskogo plant</h3>
+					<p class="activity-period">01.09.2007 &mdash; 27.02.2013</p>
+					<div class="activity-total">6 month</div>
+					<hr>
+					<p class="institution__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, sequi iusto nostrum atque. Quae dolorum rem dolores rerum, sint maxime!</p>
+				</li>
+			</ul>
 		</div>
 		<div class="philosophy container">
 			<ul class="slider__content">
@@ -265,7 +251,7 @@
 			</ul>
 		</div>
 	</section>
-	<section class="portfolio container">
+	<section class="portfolio container" id="portfolio">
 		<h2>Portfolio</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, dicta vitae omnis nemo voluptate repudiandae.</p>
 		<div class="wrap">
@@ -275,18 +261,18 @@
 			<div class="portfolio_item"><a href="#a"></a></div>
 		</div>
 	</section>
-	<section class="contacts container">
+	<section class="contacts container" id="contacts">
 		<div class="contacts__data">
 			<h2>Contact me</h2>
 			<p class="contacts__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores tempore mollitia suscipit pariatur placeat ipsa ipsam dignissimos officiis, odit facilis veritatis iste magni tempora doloribus id, impedit similique dolores quod.</p>
 		</div>
-		<form action="" method="POST" class="contacts__form">
+		<form action="mailer.php" method="POST" class="contacts__form" id="form">
 			<label for="name">Name<sup>*</sup></label>
 			<input type="text" name="name" required>
 			<label for="email">Email<sup>*</sup></label>
 			<input type="email" name="email" required>
-			<label for="messange">Messange</label>
-			<textarea name="messange"></textarea>
+			<label for="message">Message</label>
+			<textarea name="message"></textarea>
 			<div class="text-center">
 				<button type=submit class="btn-contact">Contact me</button>
 			</div>
@@ -300,6 +286,8 @@
 			<li class="socials-icons"><a href="#fb" class="skype"></a></li>
 		</ul>
 	</footer>
+	<div class="go-up"><a href="#menu"></a></div>
+	<div class="error" id="error"></div>
 	<script src="src/js/main.js">
 	</script>
 </body>

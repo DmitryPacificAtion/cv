@@ -16,6 +16,8 @@ function dropdown(elem, target, statfull = false) {
 		else target.classList.remove('open'); 
 	});
 }
+dropdown(burger, menu);
+dropdown(language, languageList, true);
 
 // Слайдер
 var sliderContentItems = document.querySelectorAll('.slider__content_item');
@@ -62,13 +64,82 @@ function slider() {
 	setInterval( startSider, 4500 );
 	clearInterval( startSider );
 }
-dropdown(burger, menu);
+slider();
+
+// Валидация
+var form = document.getElementById('form');
+var inputs = document.querySelectorAll('#form [name]');
+console.log(inputs);
+var inpt_name = form.children[1];
+var inpt_email = form.children[3];
+var inpt_messange = form.children[5];
+var inpt_subm = form.children[6].firstElementChild;
+var error = document.getElementById('error');
+function validate(elemType) {
+	var patern = '';
+	var str = elemType.value.trim();
+	switch(elemType.name) {
+		case 'name':
+			patern = /[a-zа-яіїєёґ ]*/gi;
+			str = str.replace(patern, '');
+			if(str.length)
+				showError('Это поле может содержать только буквы и пробелы', 'This field can contains only leters and spaces');
+		break;
+		case 'email':
+			patern = /[a-zа-яіїєёґ0-9._-]+@{1}[a-zа-яіїєёґ0-9_-]+(.{1}[a-zа-яіїєёґ]{2,}){1,2}/i;
+			str = str.replace(patern, '');
+			if (str)
+				showError('Возможно вы ввели неправильный адрес. Пожалуйста, попробуйте снова', 'May be you\'re enter an incorrect adress. Try again, please');
+		break;
+		case 'messange':
+			str = str.replace(/</g, '&lt;');
+			str = str.replace(/>/g, '&rt;');
+			str = str.replace(/'/g, '&#8242;');
+			str = str.replace(/‘/g, '&#8216;');
+			str = str.replace(/’/g, '&#8217;');
+			str = str.length + 1;
+		break;
+	}
+	return str.length > 0 ? true : false;
+}
+function showError(ru, en) {
+	error.classList.add('show');
+	if(document.getElementById('btn-lang').innerText === 'ru') 
+		error.innerText = ru;
+	if(document.getElementById('btn-lang').innerText === 'en') 
+		error.innerText = en;
+}
+// Запускаем
+for (var i = 0; i < inputs.length; i++) {
+	inputs[i].addEventListener('blur', function(elem){
+		if(validate(elem.srcElement)){
+			elem.srcElement.style.cssText = 'border: 1px solid red';
+		}
+		else {
+			elem.srcElement.style.cssText = 'border: none';
+			error.classList.remove('show');
+		}
+	});
+}
+
 /** TODO:
 	- Написать php email
-	- Написать валидакию формы
 	- Написать ajax уведомления о доставке почты
 	- Реализовать мультиязычность
 	*/
-	dropdown(language, languageList, true);
-	console.log(language.languageList);
-	slider();
+
+// Скролл наверх
+	// var goup = document.querySelector('.go-up');
+	// var menu = document.getElementById('menu');
+	
+	// window.onscroll = function() {
+	// 	if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700)
+	// 		goup.classList.add("active");
+	// 	else
+	// 		goup.classList.remove("active");
+	// };
+
+	// goup.addEventListener('click', function(e){
+	// 	e.preventDefault;
+	// 	menu.scrollIntoView({ behavior: "smooth"});
+	// })

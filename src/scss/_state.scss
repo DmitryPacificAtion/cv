@@ -27,7 +27,7 @@
 	}
 }
 .about {
-	&__menu { 
+	&__menu {
 		&.open {
 			display: flex;
 		}
@@ -58,6 +58,12 @@
 		}
 	}
 }
+// .go-up.active {
+// 	display: block;
+// }
+.error.show {
+	display: block;
+}
 @media screen and (min-width: $mob-lan) {
 	.position { 
 		width: 420px;
@@ -65,7 +71,7 @@
 			padding: 10px 55px;
 		}
 	}
-	.about{
+	.about {
 		&__logo {
 			font-size: rem(18);
 		}
@@ -144,10 +150,9 @@
 		}
 		&__main {
 			background-color: $grey-bg;
-			float: left;
-			margin-bottom: 50px;
+			display: flex;
 			&__photo {
-				@include set-cols-width(6, 0);
+				width: 40%;
 				.photo {
 					background-position: 20% 0;
 					height: 600px;
@@ -155,8 +160,24 @@
 			}
 			&__description {
 				background-color: transparent;
-				@include set-cols-width(6);
+				padding: 0 15px;
+				width: 60%;
 			}
+		}
+	}
+	.skills, .education, .work-experience {
+		display: flex;
+		.skills__description, .global__description {
+			@include set-cols-width(6, 0);
+		} .skills__list, .institution {
+			@include set-cols-width(6);
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+	}
+	.skills {
+		&__list {
+			margin-top: 0;
 		}
 	}
 	.portfolio {
@@ -195,7 +216,7 @@
 			align-items: baseline;
 			display: flex;
 			flex-direction: row;
-			height: 70px;
+			height: 60px;
 			padding-bottom: 0;
 			padding-top: 0;
 		}
@@ -212,8 +233,8 @@
 				display: inline-block;
 				padding: 0;
 				a {
-					padding-bottom: 25px;
-					padding-top: 25px;
+					padding-bottom: 20px;
+					padding-top: 20px;
 					width: 80px;
 				}
 			}
@@ -245,28 +266,39 @@
 		&__list_item {
 			font-size: rem(18);
 		}
-		&.open {
-			.language__list.open {
-				top: 17px;
-			}
-		}
 	}
 	.dropdown-btn {
 		font-size: rem(18);
 	}
-	// .skills {
-	// 	&__description, &__list {
-	// 		@include set-cols-width(6, 0);
-	// 	}
-
-	// }
+	.portfolio {
+		&_item {
+			a, a:after {
+				height: 220px;
+				width: 220px;
+			}
+			a:hover:after {
+				line-height: 220px;
+			}
+		}
+	}
 }
-//Media brackpoints
-/* 
-$mob: 320px;
-$mob-lan: 480px;
-$huge: 600px;
-$pda: 768px;
-$medium: 992px;
-$pda-lan: 1024px;
-$desktop: 1280px; */
+@media screen and (min-width: $desktop) {
+	.wallpaper {
+		height: 800px;
+	}
+	.position {
+		margin-bottom: 355px;
+		padding-top: 250px;
+	}	
+	.portfolio {
+		&_item {
+			a, a:after {
+				height: 320px;
+				width: 320px;
+			}
+			a:hover:after {
+				line-height: 320px;
+			}
+		}
+	}
+}
