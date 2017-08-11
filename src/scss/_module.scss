@@ -1,6 +1,6 @@
 .position {
-	margin: 0 auto 95px;
-	padding-top: 150px;
+	margin: 0 auto 140px;
+	padding-top: 90px;
 	text-align: center;
 	text-transform: uppercase;
 	width: $mob;
@@ -85,6 +85,8 @@
 			margin: 0 auto;
 			&_item {
 				margin-top: 20px;
+				padding-left: 10px;
+				padding-right: 10px;
 			}
 		}
 	}
@@ -108,7 +110,6 @@
 	.dropdown-btn {
 		&:active {
 			@include set-box-shadow (0, 0, 0);
-			@include transition();
 		}
 	}
 	&__line, &__line:after, &__line:before {
@@ -119,15 +120,15 @@
 		margin: 0 auto;
 		position: relative;
 		width: 14px;
-		@include transition();
+		transition: all .4s ease-in-out;
 	}
 	&__line:before {
 		top: -4px;
-		@include transition();
+		transition: all .4s ease-in-out;
 	}
 	&__line:after {
 		bottom: -2px;
-		@include transition();
+		transition: all .4s ease-in-out;
 	}
 }
 .language {
@@ -137,31 +138,34 @@
 	right: 55px;
 	text-align: center;
 	width: 25px;
+	ul {
+		display: none;
+	}
 	&__list {
 		background-color: $dark-txt;
 		display: none;
 		&_item {
-			height: 25px;
-			width: 25px;
 			&:nth-child(n-1) {
 				margin-top: 5px;
 			}
-			a {
-				color: $dark-bg;
-				margin: 0 auto;
-			}
 		}
+		&-btn {
+				color: $dark-bg;
+				background-color: transparent;
+				border: none;
+				margin: 0 auto;
+				height: 35px;
+				width: 35px;
+			}
 	}
 }
 .aspirations {
-	display: flex;
-	flex-flow: column;
-	justify-content: center;
+	display: block;
 	&_item {
 		padding: 10px;
 		&:hover {
 			@include set-box-shadow (0, 0, 5px, rgba(0,0,0,0.2));
-			@include transition();
+			transition: all .4s ease-in-out;
 		}
 		h2 {
 			color: $dark-txt;
@@ -210,6 +214,7 @@
 	&__download {
 		background-color: $grey-bg;
 		padding-top: 20px;
+		text-align: center;
 		&:after {
 			background-color: $grey-bg;
 			bottom: -15px;
@@ -227,19 +232,26 @@
 	li {
 		margin-top: 40px;
 	}
+	.content-list {
+		li {
+			margin-top: 0;
+		}
+	}
 	.activity {
 		&-total {
 			background-color: $green;
+			color: $dark-txt;
 			display: inline-block;
 			padding: 5px 10px;
 		}
 	}
 }
 .philosophy {
+	text-align: center;
 	.slider {
 		&__content {
 			margin-bottom: 20px;
-			text-align: center;
+			margin-top: 20px;
 			&_item {
 				display: none;
 				blockquote > p {
@@ -283,6 +295,7 @@
 	}
 }
 .portfolio {
+	text-align: center;
 	.wrap {
 		margin-top: 40px;
 	}
@@ -322,6 +335,9 @@
 .contacts {
 	h2 {	
 		color: white;
+	}
+	&__data {
+		text-align: center;
 	}
 	&__form {
 		padding-bottom: 50px;
@@ -377,10 +393,8 @@ footer {
 					content: '';
 					color: $darkest;
 					font-family: 'FontAwesome';
-					font-size: rem(16);
+					font-size: rem(15);
 					font-weight: bold;
-					position: relative;
-					top: 3px;
 				}
 			}
 			.fb:after {
@@ -424,5 +438,6 @@ footer {
 	padding: 10px 15px;
 	position: fixed;
 	top: 0;
-	width: 100%; 
+	width: 100%;
+    z-index: 1020; 
 }

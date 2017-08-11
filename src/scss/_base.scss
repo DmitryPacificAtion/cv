@@ -5,7 +5,9 @@
 	padding: 0;
 }
 body {
+	color: $grey-txt;
 	font-size: $baseFontSize;
+	line-height: 1.5;
 }
 section {
 	max-width: 1600px;
@@ -28,7 +30,7 @@ h2, h3 {
 	text-transform: uppercase;
 }
 p {
-	color: $grey-txt;
+	margin-bottom: 10px;
 }
 hr {
 	margin: 20px 0;

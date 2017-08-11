@@ -69,47 +69,47 @@ slider();
 // Валидация
 var form = document.getElementById('form');
 var inputs = document.querySelectorAll('#form [name]');
-console.log(inputs);
 var inpt_name = form.children[1];
 var inpt_email = form.children[3];
 var inpt_messange = form.children[5];
 var inpt_subm = form.children[6].firstElementChild;
 var error = document.getElementById('error');
+var btnLang = document.getElementById('btn-lang');
 function validate(elemType) {
 	var patern = '';
 	var str = elemType.value.trim();
 	switch(elemType.name) {
 		case 'name':
-			patern = /[a-zа-яіїєёґ ]*/gi;
-			str = str.replace(patern, '');
-			if(str.length)
-				showError('Это поле может содержать только буквы и пробелы', 'This field can contains only leters and spaces');
+		patern = /[a-zа-яіїєёґ ]*/gi;
+		str = str.replace(patern, '');
+		if(str.length)
+			showError('Это поле может содержать только буквы и пробелы', 'This field can contains only leters and spaces');
 		break;
 		case 'email':
-			patern = /[a-zа-яіїєёґ0-9._-]+@{1}[a-zа-яіїєёґ0-9_-]+(.{1}[a-zа-яіїєёґ]{2,}){1,2}/i;
-			str = str.replace(patern, '');
-			if (str)
-				showError('Возможно вы ввели неправильный адрес. Пожалуйста, попробуйте снова', 'May be you\'re enter an incorrect adress. Try again, please');
+		patern = /[a-zа-яіїєёґ0-9._-]+@{1}[a-zа-яіїєёґ0-9_-]+(.{1}[a-zа-яіїєёґ]{2,}){1,2}/i;
+		str = str.replace(patern, '');
+		if (str)
+			showError('Возможно вы ввели неправильный адрес. Пожалуйста, попробуйте снова', 'May be you\'re enter an incorrect adress. Try again, please');
 		break;
 		case 'messange':
-			str = str.replace(/</g, '&lt;');
-			str = str.replace(/>/g, '&rt;');
-			str = str.replace(/'/g, '&#8242;');
-			str = str.replace(/‘/g, '&#8216;');
-			str = str.replace(/’/g, '&#8217;');
-			str = str.length + 1;
+		str = str.replace(/</g, '&lt;');
+		str = str.replace(/>/g, '&rt;');
+		str = str.replace(/'/g, '&#8242;');
+		str = str.replace(/‘/g, '&#8216;');
+		str = str.replace(/’/g, '&#8217;');
+		str = str.length + 1;
 		break;
 	}
 	return str.length > 0 ? true : false;
 }
 function showError(ru, en) {
 	error.classList.add('show');
-	if(document.getElementById('btn-lang').innerText === 'ru') 
+	if(btnLang.innerText === 'ru') 
 		error.innerText = ru;
-	if(document.getElementById('btn-lang').innerText === 'en') 
+	if(btnLang.innerText === 'en') 
 		error.innerText = en;
 }
-// Запускаем
+// Запускаем валидацию
 for (var i = 0; i < inputs.length; i++) {
 	inputs[i].addEventListener('blur', function(elem){
 		if(validate(elem.srcElement)){
@@ -122,10 +122,17 @@ for (var i = 0; i < inputs.length; i++) {
 	});
 }
 
+// Скрол первого экрана
+var positionWrap = document.querySelector(".position .position-wrap");
+var home = document.getElementById("home");
+positionWrap.lastElementChild.addEventListener('click', function() {
+	var homeHeight = home.firstElementChild.scrollHeight;
+	setTimeout(function(){
+		window.scrollBy(0, (homeHeight));
+	}, 200);
+});
 /** TODO:
-	- Написать php email
 	- Написать ajax уведомления о доставке почты
-	- Реализовать мультиязычность
 	*/
 
 // Скролл наверх
@@ -143,3 +150,33 @@ for (var i = 0; i < inputs.length; i++) {
 	// 	e.preventDefault;
 	// 	menu.scrollIntoView({ behavior: "smooth"});
 	// })
+
+// Мультиязычность
+var elements = document.querySelectorAll('[data-translate]');
+var dataLang = document.querySelectorAll('[data-lang]');
+for (var i = 0; i < dataLang.length; i++) {
+	dataLang[i].addEventListener('click', function(e) {
+		if (document.cookie) {
+			// Инициализируем флаг для масисва перевода
+			var temp = document.cookie.indexOf('lang=');
+			console.log(temp);
+			// var flag = currentLang === 'en' ? 1 : 0;
+		}
+		else {
+			var currentLang = e.target.getAttribute('data-lang');
+			var currentDate = new Date();
+			currentDate.setFullYear(currentDate.getFullYear() + 1, currentDate.getMonth(), currentDate.getDate(), currentDate.getHours(), currentDate.getMinutes())
+			document.cookie = 'path=/, expires=' + currentDate + ', lang=' + currentLang;
+			// Инициализируем флаг для масисва перевода
+			var flag = currentLang === 'en' ? 1 : 0;
+			document.cookie
+		}
+		translate(flag);
+	});
+}
+function translate(flag){
+	elements.forEach(function(item){
+		var atr = item.getAttribute('data-translate');
+		item.innerHTML = dataTranslate[atr][flag];
+	});
+}
