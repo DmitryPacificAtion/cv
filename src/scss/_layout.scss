@@ -1,0 +1,26 @@
+.aspirations, .skills, .resume, .education, .philosophy, .portfolio, .contacts {
+	padding-top: 50px;
+}
+.home {
+	position: relative;
+}
+.wallpaper {
+	background: url('../img/home-bg.jpeg') center center no-repeat;
+	background-size: cover;
+	height: 400px;
+	position: absolute;
+	width: 100%;
+	z-index: 1000;
+}
+.aspirations, .education, .work-experience, .portfolio, .philosophy {
+	padding-bottom: 50px;
+}
+.philosophy {
+	background-color: $grey-bg;
+	font-family: 'Roboto-Italic';
+	font-style: italic;
+}
+.contacts {
+	background-color: $dark-bg;
+	color: white;
+}

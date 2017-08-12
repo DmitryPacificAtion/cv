@@ -1,0 +1,297 @@
+.burger {
+	&.open {
+		button {
+			@include set-box-shadow (0, 0, 0);
+			transition: all .4s ease-in-out;
+		}
+		.burger__line {
+			transform: rotate(45deg);
+			transition: all .4s ease-in-out;
+			&:before {
+				transform: rotate(90deg);
+				top: 0;
+				transition: all .4s ease-in-out;
+			}
+			&:after {
+				height: 0;
+				transition: all .4s ease-in-out;
+			}
+		}
+	}
+}
+.language.open {
+	.language__list.open {
+		display: inline-block;
+		position: relative;
+		top: 2px;
+	}
+}
+.about__menu.open {
+	display: flex;
+	flex-direction: column;
+}
+@keyframes f90 { from { width: 0; } to { width: 90%; }}
+@keyframes f85 { from { width: 0; } to { width: 85%; }}
+@keyframes f80 { from { width: 0; } to { width: 80%; }}
+@keyframes f75 { from { width: 0; } to { width: 75%; }}
+@keyframes f70 { from { width: 0; } to { width: 70%; }}
+@keyframes f65 { from { width: 0; } to { width: 65%; }}
+@keyframes f60 { from { width: 0; } to { width: 60%; }}
+.philosophy {
+	.slider {
+		&__content {
+			&_item.active {
+				display: block;
+			}
+		}
+		&__dots {
+			&_item.active {
+				button {
+					&:before {
+						background-color: $green;
+					}
+				}
+			}
+		}
+	}
+}
+// .go-up.active {
+// 	display: block;
+// }
+.error.show {
+	display: block;
+}
+@media screen and (min-width: $mob-lan) {
+	.position { 
+		width: 420px;
+		&-wrap {
+			padding: 10px 55px;
+		}
+	}
+	.about {
+		&__logo {
+			font-size: rem(18);
+		}
+		&__header {
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		&__menu {
+			li {
+				padding: 10px 0;
+				a {
+					font-size: rem(16);
+				}
+			}
+		}
+	}
+	.dropdown-btn {
+		font-size: rem(16);
+		height: 35px;
+		width: 35px;
+	}
+	.language {
+		right: 70px;
+		&__list_item {
+			font-size: rem(16);
+			height: 35px;
+			width: 35px;
+		}
+		&.open {
+			.language__list.open {
+				top: 5px;
+			}
+		}
+	}
+	.skills {
+		&__list {	
+		}
+		.wrap, &__level {
+			height: 20px;
+		}
+		&__level {
+			padding-top: 2px;
+		}
+	}
+}
+@media screen and (min-width: $pda) {
+	.dropdown-btn {
+		font-size: rem(21);
+	}
+	.language {
+		right: 75px;
+		&__list_item {
+			font-size: rem(21);
+		}
+	}
+	.aspirations {
+		display: flex;
+		flex-flow: row;
+		justify-content: center;
+		&_item {
+			padding: 10px 20px 20px;
+			h2 {
+				text-align: left;
+			}
+		}
+	}
+	.about {
+		&:after {
+			content: '';
+			clear: both;
+		}
+		&__main {
+			background-color: $grey-bg;
+			display: flex;
+			&__photo {
+				width: 40%;
+				.photo {
+					background-position: 20% 0;
+					height: 660px;
+				}
+			}
+			&__description {
+				background-color: transparent;
+				padding: 0 15px;
+				width: 60%;
+			}
+		}
+	}
+	.skills, .education, .work-experience {
+		display: flex;
+		.skills__description, .global__description {
+			@include set-cols-width(6, 0);
+		} .skills__list, .institution {
+			@include set-cols-width(6);
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+	}
+	.skills {
+		&__list {
+			margin-top: 0;
+		}
+	}
+	.portfolio {
+		&_item {
+			a, a:after {
+				height: 160px;
+				width: 160px;
+			}
+			a:hover:after {
+				line-height: 160px;
+			}
+		}
+	}
+	.contacts {
+		&__form {
+			margin: 0 auto;
+			width: 50%;
+		}
+	}
+}
+@media screen and (min-width: $pda-lan) {
+	.position {
+		margin-bottom: 200px;
+		&-wrap {
+			padding: 30px 55px;
+		}
+	}
+	.wallpaper {
+		height: 500px;
+	}
+	.burger {
+		display: none;
+	}
+	.about {
+		&__header {
+			align-items: baseline;
+			display: flex;
+			flex-direction: row;
+			height: 60px;
+			padding-bottom: 0;
+			padding-top: 0;
+		}
+		&__logo {
+			flex-grow: 100;
+			order: 1;
+		}
+		&__menu {
+			display: inline-flex;
+			flex-grow: 10;
+			margin-top: 0;
+			order: 2;
+			li {
+				display: inline-block;
+				padding: 0;
+				a {
+					padding: 15px;
+				}
+			}
+		}
+		&__photo {
+			.photo {
+				height: 450px;
+			}
+		}
+		.description {
+			&__list {
+				margin: 20px auto 0;
+				width: 85%;
+				&_item {
+					float: left;
+					margin-top: 10px;
+					width: 50%;
+				}
+			}
+		}
+	}
+	.dopdown-wrap {
+		flex-grow: 2;
+		float: none;
+		order: 3;
+	}
+	.language {
+		position: static;
+		&__list_item {
+			font-size: rem(18);
+		}
+	}
+	.language.open .language__list.open {
+		top: 13px;
+	}
+	.dropdown-btn {
+		font-size: rem(18);
+	}
+	.portfolio {
+		&_item {
+			a, a:after {
+				height: 220px;
+				width: 220px;
+			}
+			a:hover:after {
+				line-height: 220px;
+			}
+		}
+	}
+}
+@media screen and (min-width: $desktop) {
+	.wallpaper {
+		height: 800px;
+	}
+	.position {
+		margin-bottom: 340px;
+		padding-top: 250px;
+	}	
+	.portfolio {
+		&_item {
+			a, a:after {
+				height: 320px;
+				width: 320px;
+			}
+			a:hover:after {
+				line-height: 320px;
+			}
+		}
+	}
+}

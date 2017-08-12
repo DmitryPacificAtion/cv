@@ -1,0 +1,443 @@
+.position {
+	margin: 0 auto 140px;
+	padding-top: 90px;
+	text-align: center;
+	text-transform: uppercase;
+	width: $mob;
+	&-wrap {
+		background-color: rgba(0,0,0,0.5);
+		padding: 10px 5px;
+		position: relative;
+		z-index: 1010;
+	}
+	&__name {
+		border-top: 2px solid $green;
+		border-bottom: 2px solid $green;
+		color: $green;
+		font-size: rem(21);
+		padding: 5px 0;
+	}
+	.btn-cta {
+		margin-top: 10px;
+	}
+}
+.btn-cta {
+	background-color: transparent;
+	border: 2px solid $green;
+	color: $green;
+	display: inline-block;
+	font-weight: bold;
+	margin-bottom: 10px;
+	margin-top: 30px;
+	padding: 10px 25px; 
+	text-transform: uppercase;
+}
+.about {
+	&__logo {
+		color: $green;
+		display: inline-block;
+		font-family: 'Pacifico';
+		text-shadow: 2px 2px 6px black;
+	}
+	&__header {
+		background-color: $dark-bg;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	&__menu {
+		display: none;
+		justify-content: center;
+		margin-top: 10px;
+		text-align: center;
+		li {
+			padding: 5px 0;
+			a {
+				color: white;
+				display: block;
+				height: 100%;
+				width: 100%;
+				&:hover {
+					color: $green;
+				}
+			}
+		}
+	}
+	&__main {
+		&__photo {
+			.photo {
+				background-image: url("../img/landscape.jpg");
+				background-position: 20% 0;
+				background-repeat: no-repeat;
+				background-size: cover;
+				height: 600px;
+				margin: 0 auto;
+				max-width: 768px;
+				width: 100%;
+			}
+		}
+		&__description {
+			background-color: $grey-bg;
+			padding: 20px 15px;
+		}
+	}
+	.description {
+		&__list {
+			margin: 0 auto;
+			&_item {
+				margin-top: 20px;
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+		}
+	}
+}
+.dopdown-wrap {
+	float: right;
+	&:after {
+		content: '';
+		clear: both;
+	}
+}
+.dropdown-btn {
+	background-color: $dark-txt;
+	border: none;
+	height: 25px;
+	width: 25px;
+	@include set-box-shadow (2px, 2px, 2px);
+}
+.burger {
+	display: inline-block;
+	.dropdown-btn {
+		&:active {
+			@include set-box-shadow (0, 0, 0);
+		}
+	}
+	&__line, &__line:after, &__line:before {
+		background-color: $dark-bg;
+		content: '';
+		display: block;
+		height: 2px;
+		margin: 0 auto;
+		position: relative;
+		width: 14px;
+		transition: all .4s ease-in-out;
+	}
+	&__line:before {
+		top: -4px;
+		transition: all .4s ease-in-out;
+	}
+	&__line:after {
+		bottom: -2px;
+		transition: all .4s ease-in-out;
+	}
+}
+.language {
+	background-color: $dark-txt;
+	height: 25px;
+	position: absolute;
+	right: 55px;
+	text-align: center;
+	width: 25px;
+	ul {
+		display: none;
+	}
+	&__list {
+		background-color: $dark-txt;
+		display: none;
+		&_item {
+			&:nth-child(n-1) {
+				margin-top: 5px;
+			}
+		}
+		&-btn {
+				color: $dark-bg;
+				background-color: transparent;
+				border: none;
+				margin: 0 auto;
+				height: 35px;
+				width: 35px;
+			}
+	}
+}
+.aspirations {
+	display: block;
+	&_item {
+		padding: 10px;
+		&:hover {
+			@include set-box-shadow (0, 0, 5px, rgba(0,0,0,0.2));
+			transition: all .4s ease-in-out;
+		}
+		h2 {
+			color: $dark-txt;
+			text-align: center;
+			text-transform: uppercase;
+		}
+	}
+}
+.skills {
+	&__list {
+		margin-top: 50px;
+		position: relative;
+		width: 295px;
+	}
+	.wrap {
+		background-color: $grey-bg;
+		height: 30px;
+		width: 100%;
+	}
+	&__level {
+		display: inline-block;
+		padding-right: 5px;
+		padding-top: 5px;
+		position: absolute;
+		background-color: $green; 
+		color: #fff;
+		height: 30px;
+		text-align: right;
+	}
+	& .php 			{ animation: f60 1s 0.2s linear 1 normal forwards; &:after { content: '60%'; }}
+	& .mysql		{ animation: f65 1s 0.4s linear 1 normal forwards; &:after { content: '65%'; }}
+	& .js			{ animation: f85 1s 0.6s linear 1 normal forwards; &:after { content: '85%'; }}
+	& .es			{ animation: f60 1s 0.8s linear 1 normal forwards; &:after { content: '60%'; }}
+	& .ajax			{ animation: f60 1s 1.0s linear 1 normal forwards; &:after { content: '60%'; }}
+	& .git			{ animation: f85 1s 1.2s linear 1 normal forwards; &:after { content: '85%'; }}
+	& .seo			{ animation: f85 1s 1.4s linear 1 normal forwards; &:after { content: '85%'; }}
+	& .html-css		{ animation: f90 1s 1.6s linear 1 normal forwards; &:after { content: '90%'; }}
+	& .scss			{ animation: f90 1s 1.8s linear 1 normal forwards; &:after { content: '90%'; }}
+	& .packages		{ animation: f75 1s 2.0s linear 1 normal forwards; &:after { content: '75%'; }}
+	& .frameworks	{ animation: f75 1s 2.2s linear 1 normal forwards; &:after { content: '75%'; }}
+	& .email		{ animation: f60 1s 2.4s linear 1 normal forwards; &:after { content: '65%'; }}
+	& .ps			{ animation: f85 1s 2.6s linear 1 normal forwards; &:after { content: '85%'; }}
+	& .cms			{ animation: f80 1s 2.8s linear 1 normal forwards; &:after { content: '60%'; }}
+}
+.resume {
+	&__download {
+		background-color: $grey-bg;
+		padding-top: 20px;
+		text-align: center;
+		&:after {
+			background-color: $grey-bg;
+			bottom: -15px;
+			content: '';
+			display: block;
+			height: 30px;
+			margin: 0 auto;
+			position: relative;
+			transform: rotate(45deg); 
+			width: 30px;
+		}
+	}
+}
+.institution {
+	li {
+		margin-top: 40px;
+	}
+	.content-list {
+		li {
+			margin-top: 0;
+		}
+	}
+	.activity {
+		&-total {
+			background-color: $green;
+			color: $dark-txt;
+			display: inline-block;
+			padding: 5px 10px;
+		}
+	}
+}
+.philosophy {
+	text-align: center;
+	.slider {
+		&__content {
+			margin-bottom: 20px;
+			margin-top: 20px;
+			&_item {
+				display: none;
+				blockquote > p {
+					&:before, &:after {
+						color: $grey-txt;
+						content: '\f10e';
+						display: inline;
+						font-size: rem(12);
+						font-family: 'FontAwesome';
+						margin-right: 10px;
+						margin-left: 0;
+					}
+					&:after {
+						content: '\f10d';
+						margin-right: 0;
+						margin-left: 10px;
+					}
+				}
+			}
+		}
+		&__dots {
+			text-align: center;
+			&_item {
+				display: inline-block;
+				margin: 0 5px;
+				button {
+					background-color: transparent;
+					border: none;
+					&:before {
+						content: '';
+						color: transparent;
+						border: 2px solid $green;
+						border-radius: 50%;
+						display: block;
+						height: 15px;
+						width: 15px;
+					}
+				}
+			}
+		}
+	}
+}
+.portfolio {
+	text-align: center;
+	.wrap {
+		margin-top: 40px;
+	}
+	&_item {
+		display: inline-block;
+		margin: 10px;
+		position: relative;
+		text-align: center;
+		a {
+			background: url('../img/matrix.jpg') center center no-repeat;
+			display: block;
+			height: 120px;
+			position: relative;
+			text-align: center;
+			width: 120px;
+			&:after {
+				background-color: rgba(46, 204, 113, .8);
+				color: white;
+				content: '\f002';
+				font-family: 'FontAwesome';
+				font-size: rem(27);
+				left: 0;
+				opacity: 0;
+				position: absolute;
+				top: 0;
+				height: 120px;
+				width: 120px;
+			}
+			&:hover:after {
+				opacity: 1;
+				transition: all .4s ease-in-out;
+				line-height: 120px;
+			}
+		}
+	}
+}
+.contacts {
+	h2 {	
+		color: white;
+	}
+	&__data {
+		text-align: center;
+	}
+	&__form {
+		padding-bottom: 50px;
+		padding-top: 50px;
+		label, input, textarea {
+			width: 100%;
+		}
+		input, textarea {
+			background-color: $inputs-bg;
+			border: none;
+			margin-bottom: 20px;
+			padding: 10px;
+		}
+		label {
+			margin-bottom: 5px;
+		}
+		textarea {
+			height: 100px;
+		}
+	}
+}
+.text-center {
+	text-align: center;
+}
+.btn-contact {
+	background-color: $darkest;
+	border: none;
+	color: white;
+	font-weight: bold;
+	margin-bottom: 10px;
+	margin-top: 30px;
+	padding: 10px 25px; 
+	text-transform: uppercase;
+}
+footer {
+	padding-bottom: 20px;
+	padding-top: 20px;
+	text-align: center;
+	.socials {
+		text-align: center;
+		margin-top: 10px;
+		&-icons {
+			display: inline-block;
+			margin-left: 3px;
+			margin-right: 3px;
+			a {
+				background-color: $grey-txt;
+				border-radius: 50%;
+				display: block;
+				height: 25px;
+				width: 25px;
+				&:after {
+					content: '';
+					color: $darkest;
+					font-family: 'FontAwesome';
+					font-size: rem(15);
+					font-weight: bold;
+				}
+			}
+			.fb:after {
+				content: '\f09a';
+			}
+			.vk:after {
+				content: '\f189';
+			}
+			.skype:after {
+				content: '\f17e';
+			}
+		}
+	}
+}
+// .go-up {
+// 	bottom: 20px;
+// 	display: none;
+// 	background-color: $darkest;
+// 	border-radius: 50%;
+// 	height: 50px;
+// 	position: fixed;
+// 	right: 20px;
+// 	width: 50px;
+// 	&:after {
+// 		color: $dark-txt;
+// 		content: '\f062';
+// 		font-family: 'FontAwesome';
+// 		font-size: 22px;
+// 		position: relative;
+// 		top: 14px;
+// 		left: 14px;
+// 	}
+// }
+.error {
+	background-color: crimson;
+	color: white;
+	display: none;
+	font-size: rem(14);
+	font-weight: bolder;
+	height: 40px;
+	padding: 10px 15px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+    z-index: 1020; 
+}

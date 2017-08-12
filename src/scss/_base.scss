@@ -1,1 +1,44 @@
 @import "_normalize";
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	color: $grey-txt;
+	font-size: $baseFontSize;
+	line-height: 1.5;
+}
+section {
+	max-width: 1600px;
+	margin: 0 auto;
+}
+a {
+	text-decoration: none;
+}
+ul li {
+	list-style-type: none;
+}
+.container {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+h2, h3 {
+	color: $dark-txt;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+p {
+	margin-bottom: 10px;
+}
+hr {
+	margin: 20px 0;
+}
+label, input {
+	display: block;
+}
+footer {
+	background-color: $darkest;
+	color: $grey-txt;
+}
