@@ -295,5 +295,5 @@
 	<div class="error" id="error"></div>
 	<script src="src/translates/data-translate.js"></script>
 	<script src="src/js/main.js"></script>
-
-</body></html>
+</body>
+</html>
