@@ -12,15 +12,15 @@ var dataTranslate = {
 			'<li>&mdash;&nbsp;Нес ответственность за&nbsp;переезд сайта на&nbsp;новый движок, параллельно внедрил систему создание артикулов товаров и&nbsp;устранил дубли товаров.</li>' +
 			'<li>&mdash;&nbsp;Курировал работу отдела контент-менеджеров, в&nbsp;подчинении 2&nbsp;человека. Распределял, контролировал задачи, способствовал профессиональному росту членов команды.</li>' +
 			'<li>&mdash;&nbsp;Реализовал скрипт парсинга картинок с&nbsp;prom.ua который сам переименует картинки под требование новой платформы. Это помогло сократить время выполнения переезда сайта на&nbsp;1&nbsp;неделю.</li>' +
-			'<li>&mdash;&nbsp;Вел 15&nbsp;проектов одновременно по&nbsp;SEO</li>' +
+			'<li>&mdash;&nbsp;Вел 15&nbsp;проектов одновременно по&nbsp;SEO.</li>' +
 			'<li>&mdash;&nbsp;За&nbsp;4&nbsp;дня освоил SASS перпроцессор, который с&nbsp;удовольствием использую по&nbsp;сегодняшний день (это была первая технология которую я&nbsp;освоил).</li>' +
 			'<li>&mdash;&nbsp;Научился деплоить сайт на&nbsp;heroku.</li>' +
 		'</ul>', 
 		'<ul>' +
 			'<li>&mdash;&nbsp;I&nbsp;was responsible for site relocation in&nbsp;another CMS, in&nbsp;that time&nbsp;I implemented algorithm for creating vendor code in&nbsp;product cards and eliminated dublicate products.</li>' +
 			'<li>&mdash;&nbsp;Supervised work on&nbsp;content-manager department, in&nbsp;the submission of&nbsp;2&nbsp;people. Distributed and controlled tasks, help in&nbsp;the professional growth of&nbsp;team members.</li>' +
-			'<li>&mdash;&nbsp;Implemented image parser from prom.ua, wthich can able reneme pictures itself under requirements of&nbsp;a&nbsp;new platform. This helped reduce the time for the site relocation to&nbsp;1&nbsp;week</li>' +
-			'<li>&mdash;&nbsp;Lead 15&nbsp;SEO projects at&nbsp;the same time</li>' +
+			'<li>&mdash;&nbsp;Implemented image parser from prom.ua, wthich can able reneme pictures itself under requirements of&nbsp;a&nbsp;new platform. This helped reduce the time for the site relocation to&nbsp;1&nbsp;week.</li>' +
+			'<li>&mdash;&nbsp;Lead 15&nbsp;SEO projects at&nbsp;the same time.</li>' +
 			'<li>&mdash;&nbsp;For 4&nbsp;days mastered SASS preprocessor, which&nbsp;I use with pleasure till today (it&nbsp;was the first technology which I&nbsp;mastered).</li>' +
 			'<li>&mdash;&nbsp;I&nbsp;learned how to&nbsp;deploy a&nbsp;site on&nbsp;a&nbsp;heroku.</li>' +
 		'</ul>'],

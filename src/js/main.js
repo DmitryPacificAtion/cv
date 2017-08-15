@@ -1,4 +1,16 @@
 window.opener = null;
+(function(){
+	document.addEventListener('DOMContentLoaded', function(){
+		if (document.cookie.indexOf('lang=') != -1) {
+			var lang = document.cookie.indexOf('lang=');
+			var temp = document.cookie.substr(lang+5, lang+8);
+			if (temp === 'en') {
+				translate(1);
+			}
+		}
+	});
+})();
+
 var burger = document.querySelector('.burger');
 var menu = document.querySelector('.about__menu');
 var language = document.querySelector('.language');
@@ -157,21 +169,13 @@ var elements = document.querySelectorAll('[data-translate]');
 var dataLang = document.querySelectorAll('[data-lang]');
 for (var i = 0; i < dataLang.length; i++) {
 	dataLang[i].addEventListener('click', function(e) {
-		if (document.cookie) {
-			// Инициализируем флаг для масисва перевода
-			var temp = document.cookie.indexOf('lang=');
-			console.log(temp);
-			// var flag = currentLang === 'en' ? 1 : 0;
-		}
-		else {
-			var currentLang = e.target.getAttribute('data-lang');
-			var currentDate = new Date();
-			currentDate.setFullYear(currentDate.getFullYear() + 1, currentDate.getMonth(), currentDate.getDate(), currentDate.getHours(), currentDate.getMinutes())
-			document.cookie = 'path=/, expires=' + currentDate + ', lang=' + currentLang;
-			// Инициализируем флаг для масисва перевода
-			var flag = currentLang === 'en' ? 1 : 0;
-			document.cookie
-		}
+		var currentLang = e.target.getAttribute('data-lang');
+		console.log(currentLang);
+		var currentDate = new Date();
+		currentDate.setFullYear(currentDate.getFullYear() + 1, currentDate.getMonth(), currentDate.getDate(), currentDate.getHours(), currentDate.getMinutes())
+		document.cookie = 'path=/, expires=' + currentDate + ', lang=' + currentLang;
+		// Инициализируем флаг для масисва перевода
+		var flag = currentLang === 'en' ? 1 : 0;
 		translate(flag);
 	});
 }
