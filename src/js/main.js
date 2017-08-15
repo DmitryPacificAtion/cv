@@ -91,31 +91,25 @@ var btnLang = document.getElementById('btn-lang');
 function validate(elemType) {
 	var patern = '';
 	var str = elemType.value.trim();
-	console.log();
 	switch(elemType.name) {
 		case 'name':
 		patern = /[a-zа-яіїєёґ ]*/gi;
 		str = str.replace(patern, '');
-		console.log("Зашли в name");
 		if(str.length)
 			showError('Это поле может содержать только буквы и пробелы', 'This field can contains only leters and spaces');
 		break;
 		case 'email':
 		patern = /[a-zа-яіїєёґ0-9._-]+@{1}[a-zа-яіїєёґ0-9_-]+(.{1}[a-zа-яіїєёґ]{2,}){1,2}/i;
 		str = str.replace(patern, '');
-		console.log("Зашли в email");
 		if (str)
 			showError('Возможно вы ввели неправильный адрес. Пожалуйста, попробуйте снова', 'May be you\'re enter an incorrect adress. Try again, please');
 		break;
 		case 'message':
-		console.log("Зашли в textarea");
 		str = str.replace(/</g, '&lt;');
 		str = str.replace(/>/g, '&rt;');
 		str = str.replace(/'/g, '&#8242;');
 		str = str.replace(/‘/g, '&#8216;');
 		str = str.replace(/’/g, '&#8217;');
-		console.log('str ', str);
-		console.log('inputs ', inputs);
 		str = str.length + 1;
 		break;
 	}
@@ -133,7 +127,6 @@ for (var i = 0; i < inputs.length; i++) {
 	inputs[i].addEventListener('blur', function(elem){
 		if(validate(elem.srcElement)){
 			elem.srcElement.style.cssText = 'border: 1px solid red';
-			console.log("Зашли в if");
 		}
 		else {
 			elem.srcElement.style.cssText = 'border: none';
@@ -177,7 +170,6 @@ var dataLang = document.querySelectorAll('[data-lang]');
 for (var i = 0; i < dataLang.length; i++) {
 	dataLang[i].addEventListener('click', function(e) {
 		var currentLang = e.target.getAttribute('data-lang');
-		console.log(currentLang);
 		var currentDate = new Date();
 		currentDate.setFullYear(currentDate.getFullYear() + 1, currentDate.getMonth(), currentDate.getDate(), currentDate.getHours(), currentDate.getMinutes())
 		document.cookie = 'path=/, expires=' + currentDate + ', lang=' + currentLang;

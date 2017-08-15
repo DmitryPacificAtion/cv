@@ -3,7 +3,6 @@ var sass = require('gulp-sass');
 var cssmin = require('gulp-cssmin');
 var jsmin = require('gulp-jsmin');
 var rename = require('gulp-rename');
-var htmlmin = require('gulp-htmlmin');
 var imagemin = require('gulp-imagemin');
 var watch = require('gulp-watch');
 
@@ -24,13 +23,6 @@ gulp.task('js', function () {
 	.pipe(gulp.dest('build'));
 	});
 
-gulp.task('html', function() {
-	return gulp.src('./*.html')
-	.pipe(htmlmin({collapseWhitespace: true}))
-	.pipe(rename({suffix: '.min'}))
-	.pipe(gulp.dest('./'));
-	});
-
 gulp.task('fonts', function(){
 	return gulp.src('./src/fonts/**/*')
 	.pipe(gulp.dest('build/fonts'));
@@ -47,7 +39,7 @@ gulp.task('watch', ['sass', 'js'], function () {
 	gulp.watch('./src/*/*.js');
 	});
 gulp.task('build', function () {
-	gulp.start('sass', 'js', 'html', 'img', 'fonts');
+	gulp.start('sass', 'js', 'img', 'fonts');
 	});
 gulp.task('default', ['watch'], function() {
    gulp.start('sass', 'js');
