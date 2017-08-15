@@ -150,13 +150,13 @@
 			}
 		}
 		&-btn {
-				color: $dark-bg;
-				background-color: transparent;
-				border: none;
-				margin: 0 auto;
-				height: 35px;
-				width: 35px;
-			}
+			color: $dark-bg;
+			background-color: transparent;
+			border: none;
+			margin: 0 auto;
+			height: 35px;
+			width: 35px;
+		}
 	}
 }
 .aspirations {
@@ -305,7 +305,9 @@
 		position: relative;
 		text-align: center;
 		a {
-			background: url('../img/matrix.jpg') center center no-repeat;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
 			display: block;
 			height: 120px;
 			position: relative;
@@ -328,6 +330,12 @@
 				opacity: 1;
 				transition: all .4s ease-in-out;
 				line-height: 120px;
+			}
+			&.cv-site {
+				background-image: url('../img/cv.jpg');
+			}
+			&.hydrocolon {
+				background-image: url('../img/hydrocolon.jpg');
 			}
 		}
 	}
@@ -439,5 +447,5 @@ footer {
 	position: fixed;
 	top: 0;
 	width: 100%;
-    z-index: 1020; 
+	z-index: 1020; 
 }

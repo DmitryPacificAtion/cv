@@ -26,8 +26,8 @@ var dataTranslate = {
 		'</ul>'],
 	'aspirations__goals': ['Цели', 'Goals'],
 	'aspirations__goals-description': 
-		['<p>Стать частью команды фронтенд разработчиков, в&nbsp;окружении которых я&nbsp;смог&nbsp;бы расти и&nbsp;углубляться в&nbsp;познаниях фронтенда.</p>', 
-		'<p>To&nbsp;be&nbsp;a&nbsp;part of&nbsp;frontend developers team, in&nbsp;which environment&nbsp;I could grow deeper in&nbsp;knowledge of&nbsp;the frontend.</p>'],
+		['<p>Стать частью команды веб-разработчиков, где каждый знает свое дело, а&nbsp;не&nbsp;делает все за&nbsp;всех</p>', 
+		'<p>Become part of&nbsp;a&nbsp;team of&nbsp;web developers, where everyone knows their business, and does not do&nbsp;everything for everyone.'],
 	'aspirations__hobbies': ['Хобби', 'Hobbies'],
 	'aspirations__hobbies-description': 
 		['<p>В&nbsp;свободное от&nbsp;работы время люблю играть с&nbsp;друзьями в&nbsp;волейбол, кататься на&nbsp;велосипеде по&nbsp;городу, ирать на&nbsp;гитаре и&nbsp;узнавать что-то новое о&nbsp;научных открытиях.</p>', 

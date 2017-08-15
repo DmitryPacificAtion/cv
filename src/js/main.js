@@ -1,3 +1,4 @@
+window.opener = null;
 var burger = document.querySelector('.burger');
 var menu = document.querySelector('.about__menu');
 var language = document.querySelector('.language');
