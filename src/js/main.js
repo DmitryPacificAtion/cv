@@ -6,6 +6,7 @@ window.opener = null;
 			var temp = document.cookie.substr(lang+5, lang+8);
 			if (temp === 'en') {
 				translate(1);
+				document.querySelector('[data-translate="resume__btn-cta"]').setAttribute('href', 'bruslik.dmitry-Frontend-developer-en.rtf');
 			}
 		}
 	});
@@ -176,6 +177,7 @@ for (var i = 0; i < dataLang.length; i++) {
 		// Инициализируем флаг для масисва перевода
 		var flag = currentLang === 'en' ? 1 : 0;
 		translate(flag);
+		document.querySelector('[data-translate="resume__btn-cta"]').setAttribute('href', 'bruslik.dmitry-Frontend-developer-en.rtf');
 	});
 }
 function translate(flag){
