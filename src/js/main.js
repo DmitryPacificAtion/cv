@@ -175,9 +175,17 @@ for (var i = 0; i < dataLang.length; i++) {
 		currentDate.setFullYear(currentDate.getFullYear() + 1, currentDate.getMonth(), currentDate.getDate(), currentDate.getHours(), currentDate.getMinutes())
 		document.cookie = 'path=/, expires=' + currentDate + ', lang=' + currentLang;
 		// Инициализируем флаг для масисва перевода
-		var flag = currentLang === 'en' ? 1 : 0;
+		if(currentLang === 'en') {
+			var flag = 1;
+			var link = 'bruslik.dmitry-Frontend-developer-en.rtf';
+		}
+		else {
+			var flag = 0;
+			var link = 'bruslik.dmitry-Frontend-developer.rtf';
+		}
 		translate(flag);
-		document.querySelector('[data-translate="resume__btn-cta"]').setAttribute('href', 'bruslik.dmitry-Frontend-developer-en.rtf');
+		document.querySelector('[data-translate="resume__btn-cta"]').setAttribute('href', link);
+		
 	});
 }
 function translate(flag){
