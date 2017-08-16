@@ -1,5 +1,5 @@
 var dataTranslate = {
-	'position__btn-cta': ['Узнать детальнее','Learn More'],
+	'position__btn-cta': ['Узнать подробнее','Learn More'],
 	'about__menu-home': ['Главная','Home'],
 	'about__menu-about': ['Обо мне','About&nbsp;me'],
 	'about__menu-skills': ['Навыки','Skills'],
