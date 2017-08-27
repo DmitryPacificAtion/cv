@@ -20,24 +20,24 @@ var dataTranslate = {
 		'<p>In&nbsp;a&nbsp;free time&nbsp;I like to&nbsp;play in&nbsp;volleyball, ride a&nbsp;bike around town, play on&nbsp;guitar and find out something about scientific discoveries.</p>'],
 	'about__me__h2': ['Обо мне', 'About&nbsp;me'],
 	'about__me__description': 
-		['<p>Меня зовут Дмитрий Бруслик, я&nbsp;занимаюсь Frontend разработкой. Родился в&nbsp;1990 году в&nbsp;Днепропетровске, с&nbsp;1993 переехал в&nbsp;Славутич, с&nbsp;2007 живу в&nbsp;Киеве. В&nbsp;10&nbsp;лет пошел в&nbsp;музыкальную школу по&nbsp;классу гитары, и&nbsp;с&nbsp;тех пор музыка преследует меня везде. В&nbsp;работе часто слушаю музыку, потому что хорошо знакомые мелодии способны создать рабочий настрой.</p>' +
+		['<p>Меня зовут Дмитрий Бруслик, я&nbsp;занимаюсь Frontend разработкой. Родился в&nbsp;1990 году в&nbsp;Днепропетровске, с&nbsp;1993 переехал в&nbsp;Славутич, с&nbsp;2007 живу в&nbsp;Киеве. В&nbsp;10&nbsp;лет пошел в&nbsp;музыкальную школу по&nbsp;классу гитары, и&nbsp;с&nbsp;тех пор музыка преследует меня везде.</p>' +
 			'<p>Да, кстати, я&nbsp; интроверт, но&nbsp;при этом меня не&nbsp;пугают купные, шумные компании, я&nbsp;открыт к&nbsp;новым знакомствам и&nbsp;я&nbsp;не&nbsp;боюсь публичных выступлений. Верней, маленькое волнение есть, но&nbsp;в&nbsp;ступор оно меня не&nbsp;заводит :)</p>' +
 			'<p>Люблю читать мудрые книги про саморазвите и&nbsp;личностный рост. Люблю смотреть научно-популярные ролики, документальные и&nbsp;художественные фильмы.</p>' +
 			'<p>Но&nbsp;кому это интересно? Вы&nbsp;ведь не&nbsp;за&nbsp;этим сюда пришли.</p>' +
 			'<p>Взгляните на&nbsp;следующие 4&nbsp;пункта, вы&nbsp;ведь это ищете?</p>', 
-			'<p>My&nbsp;name is&nbsp;Dmitry Bruslik, I’m Frontend developer. I&nbsp;was born in&nbsp;1990 in&nbsp;Dnepropetrovsk, since 1993&nbsp;I moved to&nbsp;Slavutych, since 2007&nbsp;I live in&nbsp;Kiev. At&nbsp;the age of&nbsp;10, I&nbsp;went to&nbsp;music school in&nbsp;the guitar class, and since then the music has following me&nbsp;everywhere. In&nbsp;my&nbsp;work&nbsp;I often listen to&nbsp;music, because well-known melodies are able to&nbsp;create a&nbsp;working mood.</p>' +
+			'<p>My&nbsp;name is&nbsp;Dmitry Bruslik, I’m Frontend developer. I&nbsp;was born in&nbsp;1990 in&nbsp;Dnepropetrovsk, since 1993&nbsp;I moved to&nbsp;Slavutych, since 2007&nbsp;I live in&nbsp;Kiev. At&nbsp;the age of&nbsp;10, I&nbsp;went to&nbsp;music school in&nbsp;the guitar class, and since then the music has following me&nbsp;everywhere.</p>' +
 			'<p>By&nbsp;the way, I’m a&nbsp;introvert, but at&nbsp;that same time I&rsquo;m not afraid of&nbsp;the large, noisy companies, I&rsquo;m open to&nbsp;new acquaintances and I&rsquo;m not afraid of&nbsp;public appearances. Well, there is&nbsp;a&nbsp;little excitement, but it&nbsp;does not turn me&nbsp;into a&nbsp;stupor :)</p>' +
 			'<p>I&nbsp;like reading the wise books about self-development and personal growth. I&nbsp;like watching popular science videos, documentaries and feature films.</p>' +
 			'<p>But who is&nbsp;interested? You didn’t come here for that, did you?</p>' + 
 			'<p>Just look at&nbsp;the next 4&nbsp;points, are you looking for this?</p>'],
 	'description__list__backend': ['Backend', 'Backend'],
 	'description__list__backend-text': 
-		['<p>Написание простеньких парсеров и&nbsp;различных вспомогательных скриптов. Натяжка верстки на&nbsp;шаблон.</p>', 
-		'<p>Writing simple parsers and different additional scripts. Pulling the layout on&nbsp;the template.</p>'],
+		['<p>Написание парсеров и&nbsp;вспомогательных скриптов. Натяжка верстки на&nbsp;шаблон.</p>', 
+		'<p>Writing parsers and different additional scripts. Pulling the layout on&nbsp;the template.</p>'],
 	'description__list__frontend': ['Frontend', 'Frontend'],
 	'description__list__frontend-text': 
-		['<p>Адаптивная верстка макетов, исправление багов на&nbsp;существующем сайте. Если необходимо, могу сделать в&nbsp;pixel pirfect.</p>', 
-		'<p>Adaptive layout of&nbsp;templates, bug fixes on&nbsp;a&nbsp;production. If&nbsp;necessary, I&nbsp;can make in&nbsp;pixel perfect.</p>'],
+		['<p>Верстка макетов: адаптивная, кроссбраузерная, pixel pirfect. Отправка данных на&nbsp;сервер, валидация форм.</p>', 
+		'<p>Convert PSD into HTML/CSS: adaptive, cross browser, pixel perfect. Sending data on the server, form validation.</p>'],
 	'description__list__seo': ['SEO', 'SEO'],
 	'description__list__seo-text': 
 		['<p>Понимание принципов SEO.<br>Например, если мы&nbsp;пишем веб-приложение на&nbsp;React и&nbsp;у&nbsp;нас в&nbsp;роутах есть страничка 404, вопрос который у&nbsp;меня возникнет, звучит так: какой код ответа отдаст приложение, если мы&nbsp;удалили страцу, которая существовала ранее? По&nbsp;правилам хорошего тона оно должно вернуть не&nbsp;404 Not Found, а&nbsp;410&nbsp;Gone.</p>', 

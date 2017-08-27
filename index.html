@@ -82,7 +82,7 @@
 			<div class="about__main__description">
 				<h2 data-translate="about__me__h2">Обо мне</h2>
 				<div data-translate="about__me__description">
-					<p>Меня зовут Дмитрий Бруслик, я&nbsp;занимаюсь Frontend разработкой. Родился в&nbsp;1990 году в&nbsp;Днепропетровске, с&nbsp;1993 переехал в&nbsp;Славутич, с&nbsp;2007 живу в&nbsp;Киеве. В&nbsp;10&nbsp;лет пошел в&nbsp;музыкальную школу по&nbsp;классу гитары, и&nbsp;с&nbsp;тех пор музыка преследует меня везде. В&nbsp;работе часто слушаю музыку, потому что хорошо знакомые мелодии способны создать рабочий настрой.</p>
+					<p>Меня зовут Дмитрий Бруслик, я&nbsp;занимаюсь Frontend разработкой. Родился в&nbsp;1990 году в&nbsp;Днепропетровске, с&nbsp;1993 переехал в&nbsp;Славутич, с&nbsp;2007 живу в&nbsp;Киеве. В&nbsp;10&nbsp;лет пошел в&nbsp;музыкальную школу по&nbsp;классу гитары, и&nbsp;с&nbsp;тех пор музыка преследует меня везде.</p>
 					<p>Да, кстати, я&nbsp; интроверт, но&nbsp;при этом меня не&nbsp;пугают крупные, шумные компании, я&nbsp;открыт к&nbsp;новым знакомствам и&nbsp;я&nbsp;не&nbsp;боюсь публичных выступлений. Верней, маленькое волнение есть, но&nbsp;в&nbsp;ступор оно меня не&nbsp;заводит :)</p>
 					<p>Люблю читать мудрые книги про саморазвитие и&nbsp;личностный рост. Люблю смотреть научно-популярные ролики, документальные и&nbsp;художественные фильмы.</p>
 					<p>Но&nbsp;кому это интересно? Вы&nbsp;ведь не&nbsp;за&nbsp;этим сюда пришли.</p>
@@ -91,11 +91,11 @@
 				<ul class="description__list">
 					<li class="description__list_item">
 						<h3><i class="fa fa-keyboard-o" aria-hidden="true"></i> <span data-translate="description__list__backend">Backend</span></h3>
-						<div data-translate="description__list__backend-text"><p>Написание простеньких парсеров и&nbsp;различных вспомогательных скриптов. Натяжка верстки на&nbsp;шаблон.</p></div>
+						<div data-translate="description__list__backend-text"><p>Написание парсеров и&nbsp;вспомогательных скриптов. Натяжка верстки на&nbsp;шаблон.</p></div>
 					</li>
 					<li class="description__list_item">
 						<h3><i class="fa fa-laptop" aria-hidden="true"></i> <span data-translate="description__list__frontend">Frontend</span></h3>
-						<div data-translate="description__list__frontend-text"><p>Адаптивная верстка макетов, исправление багов на&nbsp;существующем сайте. Если необходимо, могу сделать в&nbsp;pixel pirfect.</p></div>
+						<div data-translate="description__list__frontend-text"><p>Верстка макетов: адаптивная, кроссбраузерная, pixel pirfect. Отправка данных на&nbsp;сервер, валидация форм.</p></div>
 					</li>
 					<li class="description__list_item">
 						<h3><i class="fa fa-link" aria-hidden="true"></i> <span data-translate="description__list__seo">SEO</span></h3>
@@ -329,7 +329,7 @@
 			<h2 data-translate="contacts__h2">Связаться со&nbsp;мной</h2>
 			<div class="contacts__description" data-translate="contacts__description"><p>Заполните форму, и&nbsp;ваше сообщение сразу придет на&nbsp;мою почту.</p></div>
 		</div>
-		<form action="mailer.php" method="POST" class="contacts__form" id="form">
+		<form action="mailer.php" method="POST" class="contacts__form" name="contactForm" id="form" onsubmit="send(event)">
 			<label for="name"><span data-translate="label-name">Имя</span><sup>*</sup></label>
 			<input type="text" name="name" required="">
 			<label for="email"><span data-translate="label-email">Почта</span><sup>*</sup></label>
@@ -352,6 +352,6 @@
 	<div class="go-up"><a href="#menu"></a></div>
 	<div class="error" id="error"></div>
 	<script src="build/translates/data-translate.min.js"></script>
-	<script src="build/js/main.min.js"></script>
+	<script src="src/js/main.js"></script>
 </body>
 </html>

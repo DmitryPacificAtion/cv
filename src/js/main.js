@@ -89,6 +89,7 @@ var inpt_message = form.children[5];
 var inpt_subm = form.children[6].firstElementChild;
 var error = document.getElementById('error');
 var btnLang = document.getElementById('btn-lang');
+var isValide = false;
 function validate(elemType) {
 	var patern = '';
 	var str = elemType.value.trim();
@@ -128,12 +129,26 @@ for (var i = 0; i < inputs.length; i++) {
 	inputs[i].addEventListener('blur', function(elem){
 		if(validate(elem.srcElement)){
 			elem.srcElement.style.cssText = 'border: 1px solid red';
+			isValide = false;
 		}
 		else {
 			elem.srcElement.style.cssText = 'border: none';
 			error.classList.remove('show');
+			isValide = true;
 		}
 	});
+}
+inpt_subm.addEventListener('click', function(event){
+	isValide ? send(e) : showError('Проверьте корректность данных', 'Check the correctness of the entered data');
+});
+function send(e) {
+	e.prevetnDefault();
+
+	var xhr = new XMLHttpRequest();
+	var form = document.forms.contactForm;
+	var formData = new FormData(form);
+	xhr.open('POST', 'mailer.php', true);
+	xhr.send(formData);
 }
 
 // Скрол первого экрана
@@ -146,7 +161,7 @@ positionWrap.lastElementChild.addEventListener('click', function() {
 	}, 200);
 });
 /** TODO:
-	- Написать ajax уведомления о доставке почты
+	- Написать плавный скролл
 	*/
 
 // Скролл наверх
