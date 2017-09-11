@@ -37,17 +37,22 @@
 		color: $green;
 		display: inline-block;
 		font-family: 'Pacifico';
+		font-size: rem(18);
 		text-shadow: 2px 2px 6px black;
+		order: 1;
 	}
 	&__header {
 		background-color: $dark-bg;
-		padding-top: 5px;
-		padding-bottom: 5px;
+		display: flex;
+		justify-content: space-between;
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 	&__menu {
 		display: none;
 		justify-content: center;
 		margin-top: 10px;
+		order: 2;
 		text-align: center;
 		li {
 			padding: 5px 0;
@@ -92,21 +97,20 @@
 	}
 }
 .dopdown-wrap {
-	float: right;
-	&:after {
-		content: '';
-		clear: both;
-	}
+	display: flex;
+	justify-content: space-between;
+	order: 3;
+	width: 85px;
 }
 .dropdown-btn {
 	background-color: $dark-txt;
 	border: none;
-	height: 25px;
-	width: 25px;
+	font-size: rem(16);
+	height: 35px;
+	width: 35px;
 	@include set-box-shadow (2px, 2px, 2px);
 }
 .burger {
-	display: inline-block;
 	.dropdown-btn {
 		&:active {
 			@include set-box-shadow (0, 0, 0);
@@ -132,30 +136,24 @@
 	}
 }
 .language {
-	background-color: $dark-txt;
-	height: 25px;
-	position: absolute;
-	right: 55px;
-	text-align: center;
-	width: 25px;
-	ul {
-		display: none;
-	}
+	font-size: rem(16);
+	position: relative;
 	&__list {
 		background-color: $dark-txt;
 		display: none;
+		position: absolute;
+		top: 50px;
 		&_item {
-			&:nth-child(n-1) {
-				margin-top: 5px;
-			}
+			height: 35px;
+			text-align: center;
+			width: 35px;
 		}
 		&-btn {
-			color: $dark-bg;
 			background-color: transparent;
 			border: none;
+			color: $dark-bg;
+			line-height: 35px;
 			margin: 0 auto;
-			height: 35px;
-			width: 35px;
 		}
 	}
 }

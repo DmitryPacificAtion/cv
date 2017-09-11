@@ -21,9 +21,7 @@
 }
 .language.open {
 	.language__list.open {
-		display: inline-block;
-		position: relative;
-		top: 2px;
+		display: block;
 	}
 }
 .about__menu.open {
@@ -69,37 +67,12 @@
 		}
 	}
 	.about {
-		&__logo {
-			font-size: rem(18);
-		}
-		&__header {
-			padding-top: 10px;
-			padding-bottom: 10px;
-		}
 		&__menu {
 			li {
 				padding: 10px 0;
 				a {
 					font-size: rem(16);
 				}
-			}
-		}
-	}
-	.dropdown-btn {
-		font-size: rem(16);
-		height: 35px;
-		width: 35px;
-	}
-	.language {
-		right: 70px;
-		&__list_item {
-			font-size: rem(16);
-			height: 35px;
-			width: 35px;
-		}
-		&.open {
-			.language__list.open {
-				top: 5px;
 			}
 		}
 	}
@@ -115,15 +88,6 @@
 	}
 }
 @media screen and (min-width: $pda) {
-	.dropdown-btn {
-		font-size: rem(21);
-	}
-	.language {
-		right: 75px;
-		&__list_item {
-			font-size: rem(21);
-		}
-	}
 	.aspirations {
 		display: flex;
 		flex-flow: row;
@@ -246,19 +210,8 @@
 			}
 		}
 	}
-	.dopdown-wrap {
-		flex-grow: 2;
-		float: none;
-		order: 3;
-	}
-	.language {
-		position: static;
-		&__list_item {
-			font-size: rem(18);
-		}
-	}
-	.language.open .language__list.open {
-		top: 13px;
+	.dopdown-wrap {	
+		width: 35px;
 	}
 	.dropdown-btn {
 		font-size: rem(18);
