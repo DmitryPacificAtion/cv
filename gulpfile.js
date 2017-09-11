@@ -19,7 +19,6 @@ gulp.task('sass', function () {
 gulp.task('js', function () {
 	gulp.src('./src/*/*.js')
 	.pipe(jsmin())
-	.pipe(rename({suffix: '.min'}))
 	.pipe(gulp.dest('build'));
 	});
 

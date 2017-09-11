@@ -8,12 +8,12 @@ var dataTranslate = {
 	'about__menu-contacts': ['Контакты', 'Contacts'],
 	'aspirations__achievements': ['Достижения', 'Achievements'],
 	'aspirations__achievements-description': 
-		['<ul><li>&mdash;&nbsp;Нес ответственность за&nbsp;переезд сайта на&nbsp;новый движок, параллельно внедрил систему создание артикулов товаров и&nbsp;устранил дубли товаров.</li><li>&mdash;&nbsp;Курировал работу отдела контент-менеджеров, в&nbsp;подчинении 2&nbsp;человека. Распределял, контролировал задачи, способствовал профессиональному росту членов команды.</li><li>&mdash;&nbsp;Реализовал скрипт парсинга картинок с&nbsp;prom.ua который сам переименует картинки под требование новой платформы. Это помогло сократить время выполнения переезда сайта на&nbsp;1&nbsp;неделю.</li><li>&mdash;&nbsp;Вел 15&nbsp;проектов одновременно по&nbsp;SEO.</li><li>&mdash;&nbsp;За&nbsp;4&nbsp;дня освоил SASS препроцессор, который с&nbsp;удовольствием использую по&nbsp;сегодняшний день (это была первая технология которую я&nbsp;освоил).</li><li>&mdash;&nbsp;Научился деплоить сайт на&nbsp;heroku.com.</li></ul>', 
-		'<ul><li>&mdash;&nbsp;I&nbsp;was responsible for site relocation in&nbsp;another CMS, in&nbsp;that time&nbsp;I implemented algorithm for creating vendor code in&nbsp;product cards and eliminated duplicate products.</li><li>&mdash;&nbsp;Supervised work on&nbsp;content-manager department, in&nbsp;the submission of&nbsp;2&nbsp;people. Distributed and controlled tasks, help in&nbsp;the professional growth of&nbsp;team members.</li><li>&mdash;&nbsp;Implemented image parser from prom.ua, which can able rename pictures itself under requirements of&nbsp;a&nbsp;new platform. This helped reduce the time for the site relocation to&nbsp;1&nbsp;week.</li><li>&mdash;&nbsp;Lead 15&nbsp;SEO projects at&nbsp;the same time.</li><li>&mdash;&nbsp;For 4&nbsp;days mastered SASS preprocessor, which&nbsp;I use with pleasure till today (it&nbsp;was the first technology which I&nbsp;mastered).</li><li>&mdash;&nbsp;I&nbsp;learned how to&nbsp;deploy a&nbsp;site on&nbsp;a&nbsp;heroku.</li></ul>'],
+		['<ul><li>&mdash;&nbsp;Курировал и&nbsp;нес ответственность за&nbsp;переезд сайта на&nbsp;новый движок, параллельно внедрил алгоритм создания артикулов товаров, тем самым устранил дубли.</li><li>&mdash;&nbsp;Руководил работой отдела контент-менеджеров (в&nbsp;подчинении 2&nbsp;человека). Распределял, контролировал задачи, способствовал профессиональному росту членов команды.</li><li>&mdash;&nbsp;Реализовал скрипт парсинга картинок с&nbsp;prom.ua который сам переименует картинки под требование новой платформы. Это способствовало сокращению времени переезда сайта на&nbsp;1&nbsp;неделю.</li><li>&mdash;&nbsp;Одновременно вел 15&nbsp;проектов по&nbsp;SEO.</li><li>&mdash;&nbsp;За&nbsp;4&nbsp;дня освоил SASS перпроцессор, который с&nbsp;удовольствием использую в&nbsp;теперешнее время (это была одна из&nbsp;первых технология которую я&nbsp;освоил самостоятельно).</li><li>&mdash;&nbsp;Научился деплоить сайт на&nbsp;heroku.com.</li></ul>', 
+		'<ul><li>&mdash;&nbsp;I&nbsp;supervised and was responsible for site relocation in&nbsp;another CMS, in&nbsp;that time&nbsp;I implemented algorithm for creating vendor code in&nbsp;product cards thereby eliminating duplicates.</li> <li>&mdash;&nbsp;Managed the work of&nbsp;the content-manager department (in&nbsp;the submission of&nbsp;2&nbsp;people). Distributed, controlled tasks, promoted the professional growth of&nbsp;team members.</li> <li>&mdash;&nbsp;Implemented image parser from prom.ua, which can able rename pictures itself under requirements of&nbsp;a&nbsp;new platform. This helped to&nbsp;reduce the time for the site to&nbsp;move to&nbsp;1&nbsp;week.</li> <li>&mdash;&nbsp;Lead 15&nbsp;SEO projects at&nbsp;the same time.</li> <li>&mdash;&nbsp;For 4&nbsp;days mastered SASS preprocessor, which&nbsp;I use with pleasure in&nbsp;the present time (this was one of&nbsp;the first technologies that&nbsp;I mastered myself).</li> <li>&mdash;&nbsp;I&nbsp;learned how to&nbsp;deploy a&nbsp;site on&nbsp;a&nbsp;heroku.</li></ul>'],
 	'aspirations__goals': ['Цели', 'Goals'],
 	'aspirations__goals-description': 
-		['<p>Стать частью команды веб-разработчиков, где каждый знает свое дело, а&nbsp;не&nbsp;делает все за&nbsp;всех</p>', 
-		'<p>Become part of&nbsp;a&nbsp;team of&nbsp;web developers, where everyone knows their business, and does not do&nbsp;everything for everyone.'],
+		['<p>Стать профессиональным веб-разработчиков для которого нет невыполнимых задач, стать частью команды, где каждый знает свое дело, а&nbsp;не&nbsp;делает все за&nbsp;всех.</p>', 
+		'<p>Become a&nbsp;professional web developer for which there are no&nbsp;impossible tasks, to&nbsp;become part of&nbsp;a&nbsp;team of&nbsp;web developers, where everyone knows their business, and does not do&nbsp;everything for everyone.</p>'],
 	'aspirations__hobbies': ['Хобби', 'Hobbies'],
 	'aspirations__hobbies-description': 
 		['<p>В&nbsp;свободное от&nbsp;работы время люблю играть с&nbsp;друзьями в&nbsp;волейбол, кататься на&nbsp;велосипеде по&nbsp;городу, играть на&nbsp;гитаре и&nbsp;узнавать что-то новое о&nbsp;научных открытиях.</p>', 
@@ -32,8 +32,8 @@ var dataTranslate = {
 			'<p>Just look at&nbsp;the next 4&nbsp;points, are you looking for this?</p>'],
 	'description__list__backend': ['Backend', 'Backend'],
 	'description__list__backend-text': 
-		['<p>Написание парсеров и&nbsp;вспомогательных скриптов. Натяжка верстки на&nbsp;шаблон.</p>', 
-		'<p>Writing parsers and different additional scripts. Pulling the layout on&nbsp;the template.</p>'],
+		['<p>Написание парсеров и&nbsp;вспомогательных скриптов, реализация несложной логики.</p>', 
+		'<p>Writing parsers and different auxiliary scripts, implementation of&nbsp;non-complex logic.</p>'],
 	'description__list__frontend': ['Frontend', 'Frontend'],
 	'description__list__frontend-text': 
 		['<p>Верстка макетов: адаптивная, кроссбраузерная, pixel pirfect. Отправка данных на&nbsp;сервер, валидация форм.</p>', 
@@ -48,9 +48,9 @@ var dataTranslate = {
 		'<p>What else to&nbsp;add here? This must have. I&rsquo;m using Bitbucket and GitHub.</p>'],
 	'skills__h2': ['Мои навыки', 'My&nbsp;skills'],
 	'skills__description': 
-		['<p>Ниже представлен перечень технологий с&nbsp;которыми имел дело. Я&nbsp;не&nbsp;претендую на&nbsp;звание широкопрофильного специалиста, но&nbsp;одно из&nbsp;моих сильных качеств&nbsp;&mdash; это любознательность. Я&nbsp;интересуюсь всем по&nbsp;чуть-чуть, но&nbsp;профессионалом быть хочу в&nbsp;чем-то одном. Во&nbsp;фронтенд разработке.</p>' + 
+		['<p>Ниже представлен перечень технологий с&nbsp;которыми я дружу. Я&nbsp;не&nbsp;претендую на&nbsp;звание широкопрофильного специалиста, но&nbsp;одно из&nbsp;моих сильных качеств&nbsp;&mdash; это любознательность. Я&nbsp;интересуюсь всем по&nbsp;чуть-чуть, но&nbsp;профессионалом быть хочу в&nbsp;чем-то одном. Во&nbsp;фронтенд разработке.</p>' + 
 		'<p>Кроме представленных технологий я&nbsp;так&nbsp;же поверхностно касался Ajax, тестирования с&nbsp;Chai/Mocha, Linux (Ubuntu, Kali), ReactJS + Redax + Routing. В&nbsp;перспективе я&nbsp;хочу полноценно освоить&nbsp;их.</p>', 
-		'<p>Below presented a&nbsp;list of&nbsp;technologies what&nbsp;I work with. I&nbsp;do not pretend to&nbsp;be&nbsp;a&nbsp;broad-profile specialist, but one of&nbsp;my&nbsp;strong qualities is&nbsp;curiosity. Im interested in&nbsp;everything a&nbsp;little bit, but&nbsp;I want to&nbsp;be&nbsp;a&nbsp;professional in&nbsp;one thing. In&nbsp;frontend development.</p><p>Besides presented technologies&nbsp;I superficially deal with Ajax, testing with Chai/Mocha, Linux (Ubuntu, Kali), ReactJS + Redax + Routing. In&nbsp;perspective&nbsp;I want fully master&nbsp;it.</p>'],
+		'<p>Below presented a&nbsp;list of&nbsp;technologies what&nbsp;I worked with. I do not claim to be a walking encyclopedia, but one of&nbsp;my&nbsp;strong qualities is&nbsp;curiosity. Im interested in&nbsp;everything a&nbsp;little bit, but&nbsp;I want to&nbsp;be&nbsp;a&nbsp;professional in&nbsp;one thing. In&nbsp;frontend development.</p><p>Besides presented technologies&nbsp;I was slightly concerned with Ajax, testing with Chai/Mocha, Linux (Ubuntu, Kali), ReactJS + Redax + Routing. In&nbsp;the future, I&nbsp;plan to&nbsp;fully master these technologies.</p>'],
 	'skills__btn-cta': ['Связаться со&nbsp;мной', 'Contact&nbsp;me'],
 	'resume__h2': ['Резюме', 'Resume'],
 	'resume__description': 
@@ -59,7 +59,7 @@ var dataTranslate = {
 	'resume__btn-cta': ['Скачать', 'Download'],
 	'education__h2': ['Образование', 'My&nbsp;Education'],
 	'education__description': 
-		['<p>По&nbsp;мимо указанных ниже курсов и&nbsp;высшего образования, я&nbsp;регулярно читаю книги, смотрю ролики и&nbsp;читаю блоги профессионального направления.</p>' +
+		['<p>Кроме высшего образования и&nbsp;указанных ниже курсов, я&nbsp;регулярно читаю книги, смотрю ролики и&nbsp;читаю блоги профессионального направления.</p>' +
 		'<p>Так&nbsp;же 2&nbsp;года подряд был участником «Группы Личностного Роста». На&nbsp;группе понравились такие темы:</p>' +
 		'<ul>' +
 		'<li>&mdash;&nbsp;Понятие зрелости и&nbsp;инфантильности.</li>' +
@@ -69,8 +69,8 @@ var dataTranslate = {
 		'<li>&mdash;&nbsp;Системы планирования времени.</li>' +
 		'<li>&mdash;&nbsp;8&nbsp;типов характера.</li>' +
 		'</ul>' +
-		'<p>... и&nbsp;многое другое. За&nbsp;время посещения группы мое мышление стало более глубоким, расширилось мировоззрение, я&nbsp;стал более зрелой личностью.</p>',
-		'<p>In&nbsp;addition to&nbsp;the following courses and higher education, I&nbsp;usually reading books, watching movies and reading blogs of&nbsp;the professional direction.</p>' +
+		'<p>... и&nbsp;многое другое.</p><p>За&nbsp;время посещения группы я&nbsp;стал более зрелой личностью, мое мировоззрение расширилось.</p>',
+		'<p>In&nbsp;addition to&nbsp;higher education and the courses listed below, I&nbsp;usually reading books, watching movies and reading blogs of&nbsp;the professional direction.</p>' +
 		'<p>Also I&nbsp;was a&nbsp;member of&nbsp;&laquo;Group of&nbsp;personal growth&raquo; for 2&nbsp;years in&nbsp;a&nbsp;row. On&nbsp;the group I&nbsp;liked these topics: </p>' +
 		'<ul>' +
 		'<li>&mdash;&nbsp;The concept of&nbsp;maturity and infantile.</li>' +
@@ -80,11 +80,12 @@ var dataTranslate = {
 		'<li>&mdash;&nbsp;Time planning systems.</li>' +
 		'<li>&mdash;&nbsp;8&nbsp;types of&nbsp;character.</li>' +
 		'</ul>' +
-		'<p>... And much more. For the time of&nbsp;visiting the group, my&nbsp;thinking became deeper, my&nbsp;outlook expanded, and&nbsp;I became a&nbsp;more mature person.</p>'],
+		'<p>... And much more.</p><p>For visiting the group, I&nbsp; became a more mature person, my worldview expanded.</p>'],
 	'institution__nau': ['Национальный авиационный университет', 'National Aviation University'],
+	'institution__specialization': ['Инженер автоматизации и компьютерно-интегрированные технологий', 'Engineer of automation and computer-integrated technologies'],
 	'institution__nau__degree': ['Специалист', 'Specialist'],
 	'institution__nau__description':
-		['<p>Мною написана и&nbsp;успешно защита дипломная работа квалификации &laquo;специалист&raquo;. Тема дипломной работы: &laquo;Система автоматического распознавания темпа аудио сигнала&raquo;. Даная работа описывает систему, которая с&nbsp;помощью математических методов способна определить темп музыкального фрагмента. Целью данной работы являлось создание программного обеспечения на&nbsp;языке C#, которое реализовало&nbsp;бы систему, что опирается на&nbsp;алгоритм представленный на&nbsp;конференции Mirex в&nbsp;2006&nbsp;году. По&nbsp;данной дипломной работе мною была написана статья в&nbsp;научный журнал университета, которую опубликовали в&nbsp;2012&nbsp;году.</p>', 
+		['<p>Мною написана и&nbsp;успешно защита дипломная работа квалификации &laquo;специалист&raquo;. Тема дипломной работы: &laquo;Система автоматического распознавания темпа аудио сигнала&raquo;. Даная работа описывает систему, которая с&nbsp;помощью математических методов способна определить темп музыкального фрагмента. Целью данной работы являлось создание программного обеспечения на&nbsp;языке C#, которое реализовало&nbsp;бы систему, что опирается на&nbsp;алгоритм представленный на&nbsp;конференции Mirex в&nbsp;2006&nbsp;году. По&nbsp;данной дипломной работе мною была написана статья в&nbsp;научный журнал университета, которая опубликована в&nbsp;2012&nbsp;году</p>', 
 		'<p>I&nbsp;wrote and successfully defended the qualification thesis work &laquo;specialist&raquo;. Theme of&nbsp;the thesis work: &laquo;The system of&nbsp;automatically recognizing of&nbsp;the tempo of&nbsp;the audio signal&raquo;. This work describes a&nbsp;system, which using mathematical methods is&nbsp;able to&nbsp;determine the tempo of&nbsp;a&nbsp;musical fragment. The purpose of&nbsp;this work was the creation of&nbsp;software in&nbsp;the language of&nbsp;C#, which implemented the system, which is&nbsp;based on&nbsp;the algorithm presented at&nbsp;the Mirex conference in&nbsp;2006&nbsp;year. On&nbsp;this graduation paper&nbsp;I wrote an&nbsp;article in&nbsp;the scientific journal of&nbsp;the university, which was published in&nbsp;2012.</p>'],
 	'institution__htmlAcademy': ['HTML Academy', 'HTML Academy'],
 	'institution___htmlAcademy__period': ['2&nbsp;месяца', '2&nbsp;month'],
@@ -108,7 +109,7 @@ var dataTranslate = {
 	'work__fotos': ['f.ua', 'f.ua'],
 	'work__fotos__total': ['13&nbsp;месяцев', '13&nbsp;month'],
 	'work__fotos__description': 
-		['<p>По началу работал контент менеджером. В мои обязанности входило поиск достоверных источников информации о товарах, наполнением сайта контентом для различных групп товаров.  ' +
+		['<p>Вначале работал контент менеджером. В&nbsp;обязанности входило поиск достоверных источников информации о товарах, наполнение сайта контентом для различных групп товаров. ' +
 		'После нескольких месяцев работы мне доверили обязанность по отделу: редактировать инструкций в формате PDF и вносить их в карточки товаров. ' +
 		'Чуть позже я перешел в SEO отдел, где стал помощником оптимизатора. Я составлял семантическое ядро, мета-теги и работал со ссылочной массой.', 
 		'<p>At&nbsp;first&nbsp;I worked as&nbsp;a&nbsp;content manager. My&nbsp;job was to&nbsp;find reliable sources of&nbsp;information about products, filling the site with content for different groups of&nbsp;products. After several months of&nbsp;work, I&nbsp;was entrusted with the duty of&nbsp;the department: edit instructions in&nbsp;PDF format and submit them to&nbsp;the card catalog.</p>' +
@@ -116,7 +117,7 @@ var dataTranslate = {
 	'work__beryozin': ['Студия Александра Берёзина', ''],
 	'work__beryozin__total': ['11&nbsp;месяцев', '11&nbsp;month'],
 	'work__beryozin__description': 
-		['<p>Работал Junior SEO специалистом. В&nbsp;мои обязанности входило:</p>' +
+		['<p>Работал Junior SEO специалистом. В&nbsp;обязанности входило:</p>' +
 		'<ul class="content-list">' +
 		'<li>&mdash;&nbsp;Сбор семантического ядра и&nbsp;группировки по&nbsp;страницам.</li>' +
 		'<li>&mdash;&nbsp;Проводил работы по&nbsp;внутренней оптимизации сайта (настройка редиректов, текстовая оптимизация, перелинковка).</li>' +
@@ -138,7 +139,7 @@ var dataTranslate = {
 	'work__seostudio': ['SEO Studio', 'SEO Studio'],
 	'work__seostudio__total': ['7&nbsp;месяцев', '7&nbsp;month'],
 	'work__seostudio__description': 
-		['<p>Работал SEO специалистом. В&nbsp;мои обязанности входило:</p>' +
+		['<p>Работал SEO специалистом. В&nbsp; обязанности входило:</p>' +
 		'<ul class="content-list">' +
 		'<li>&mdash;&nbsp;Составление стратегий развития проектов.</li>' +
 		'<li>&mdash;&nbsp;Подробный аудит на&nbsp;выявление технических ошибок и&nbsp;составление&nbsp;ТЗ на&nbsp;их&nbsp;исправление.</li>' +
@@ -160,30 +161,30 @@ var dataTranslate = {
 	'work__agromat': ['Агромат', 'Agromat'],
 	'work__agromat__total': ['5&nbsp;месяцев', '5&nbsp;month'],
 	'work__agromat__description': 
-		['<p>Работал верстальщиком. В&nbsp;мои обязанности входило:</p>' +
+		['<p>Работал верстальщиком. В&nbsp; обязанности входило:</p>' +
 		'<ul class="content-list">' +
 		'<li>&mdash;&nbsp;Исправление багов в&nbsp;верстке.</li>' +
 		'<li>&mdash;&nbsp;Верстка отдельных компонентов на&nbsp;страницах.</li>' +
 		'</ul>' +
-		'<p>На&nbsp;этой работе я&nbsp;освоил SASS, научился использовать Git и&nbsp;получил небольшой опыт работы в&nbsp;команде разработчиков.</p>', 
+		'<p>На&nbsp;этой работе я&nbsp;освоил SASS, научился использовать Git и&nbsp;получил опыт работы в&nbsp;команде разработчиков.</p>', 
 		'<p>Worked as&nbsp;a&nbsp;layout coder. My&nbsp;duties included:</p>' +
 		'<ul class="content-list">' +
 		'<li>&mdash;&nbsp;Correcting bugs in&nbsp;layout.</li>' +
 		'<li>&mdash;&nbsp;Coding of&nbsp;individual components on&nbsp;the pages.</li>' +
 		'</ul>' +
-		'<p>In&nbsp;this work&nbsp;I mastered SASS, I&nbsp;learned how to&nbsp;use Git and got a&nbsp;little experience in&nbsp;the development team.</p>'],
+		'<p>In&nbsp;this work&nbsp;I mastered SASS, I&nbsp;learned how to&nbsp;use Git and got a&nbsp; experience in&nbsp;the development team.</p>'],
 	'work__ukrvet': ['Укрвет', 'Ukrvet'],
 	'work__ukrvet__total': ['7&nbsp;месяцев', '7&nbsp;month'],
 	'work__ukrvet__description': 
 		['<p>Занимаемая должность: руководитель контент отдела. В&nbsp;обязанности входило:</p>' +
 		'<ul class="content-list">' +
-		'<li>&mdash;&nbsp;Курировал переезд сайта с&nbsp;платформы prom.ua на&nbsp;платформу horoshop.com.ua.</li>' +
+		'<li>&mdash;&nbsp;Курирование переезда сайта с&nbsp;платформы prom.ua на&nbsp;платформу horoshop.com.ua.</li>' +
 		'<li>&mdash;&nbsp;Создание лендинга для нового направления товаров.</li>' +
-		'<li>&mdash;&nbsp;Постановка и&nbsp;контроль выполнения задач, помощь членам команды в&nbsp;профессиональном росте.</li>' +
+		'<li>&mdash;&nbsp;Постановка и&nbsp;контроль выполнения задач, а&nbsp;так&nbsp;же помощь членам команды в&nbsp;профессиональном росте.</li>' +
 		'</ul>', 
 		'<p>Worked as&nbsp;a&nbsp;head of&nbsp;content department. My&nbsp;duties included:</p>' +
 		'<ul class="content-list">' +
-		'<li>&mdash;&nbsp;Supervised the relocation of&nbsp;the site from the prom.ua platform to&nbsp;the horoshop.com.ua platform.</li>' +
+		'<li>&mdash;&nbsp;Supervising the relocation of&nbsp;the site from the prom.ua platform to&nbsp;the horoshop.com.ua platform.</li>' +
 		'<li>&mdash;&nbsp;Creating a&nbsp;landing for a&nbsp;new direction of&nbsp;goods.</li>' +
 		'<li>&mdash;&nbsp;Delegation and control of&nbsp;tasks, assistance to&nbsp;team members in&nbsp;professional growth.</li>' +
 		'</ul>'],
@@ -211,7 +212,7 @@ var dataTranslate = {
 		['<p>Здесь представлены некоторые из&nbsp;моих работ.</p>', '<p>Here are some of&nbsp;my&nbsp;works.</p>'],
 	'contacts__h2': ['Связаться со&nbsp;мной', 'Contact&nbsp;me'],
 	'contacts__description': 
-		['<p>Заполните форму, и&nbsp;ваше сообщение сразу придет на&nbsp;мою почту.</p>', '<p>Fill out the form and your message will immediately arrive on&nbsp;my&nbsp;email.</p>'],
+		['<p>Заполните форму, и&nbsp;ваше сообщение незамедлительно придет на&nbsp;мою почту.</p>', '<p>Fill out the form and your message will immediately arrive on&nbsp;my&nbsp;email.</p>'],
 	'label-name': ['Имя', 'Name'],
 	'label-email': ['Почта', 'Email'],
 	'label-message': ['Сообщение', 'Message'],

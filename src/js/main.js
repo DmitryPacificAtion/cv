@@ -138,27 +138,35 @@ for (var i = 0; i < inputs.length; i++) {
 		}
 	});
 }
-inpt_subm.addEventListener('click', function(event){
-	isValide ? send(e) : showError('Проверьте корректность данных', 'Check the correctness of the entered data');
-});
-function send(e) {
-	e.prevetnDefault();
+// inpt_subm.addEventListener('click', function(event){
+// 	isValide ? send(e) : showError('Проверьте корректность данных', 'Check the correctness of the entered data');
+// });
+// function send(e) {
+// 	e.prevetnDefault();
 
-	var xhr = new XMLHttpRequest();
-	var form = document.forms.contactForm;
-	var formData = new FormData(form);
-	xhr.open('POST', 'mailer.php', true);
-	xhr.send(formData);
-}
+// 	var xhr = new XMLHttpRequest();
+// 	var form = document.forms.contactForm;
+// 	var formData = new FormData(form);
+// 	xhr.open('POST', 'mailer.php', true);
+// 	xhr.send(formData);
+// }
 
 // Скрол первого экрана
 var positionWrap = document.querySelector(".position .position-wrap");
-var home = document.getElementById("home");
+var about = document.getElementById("about");
 positionWrap.lastElementChild.addEventListener('click', function() {
-	var homeHeight = home.firstElementChild.scrollHeight;
-	setTimeout(function(){
-		window.scrollBy(0, (homeHeight));
-	}, 200);
+	// var aboutHeight = about.firstElementChild.scrollHeight;
+	var aboutHeight = about.clientHeight;
+	var i = 0;
+	var sti = setInterval(function(){
+		i += 5;
+		console.log('i ', i);
+		console.log('about.offsetTop ', about.offsetTop);
+		window.scrollBy(0, i);
+		if (i >= aboutHeight) {
+			clearInterval(sti);
+		}
+	}, 50);
 });
 /** TODO:
 	- Написать плавный скролл
