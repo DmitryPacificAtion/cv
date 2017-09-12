@@ -16,11 +16,11 @@
 		<div class="position">
 			<div class="position-wrap">
 				<h1 class="position__name">Frontend Developer</h1>
-				<a href="#menu" class="btn-cta" data-translate="position__btn-cta">Узнать подробнее</a>
+				<button class="btn-cta" data-translate="position__btn-cta" data-scroll="menu">Узнать подробнее</button>
 			</div>
 		</div>
 	</section>
-	<section class="about" id="about"><a name="menu"></a></div>
+	<section class="about" id="about">
 		<header class="about__header container">
 			<div class="about__logo">Dmitry Bruslik</div>
 			<div class="dopdown-wrap">
@@ -35,22 +35,22 @@
 			</div>
 			<ul class="about__menu" id="menu">
 				<li>
-					<a href="" data-translate="about__menu-home">Главная</a>
+					<a href="#home" data-scroll="home" data-translate="about__menu-home">Главная</a>
 				</li>
 				<li>
-					<a href="#about" data-translate="about__menu-about">Обо мне</a>
+					<a href="#about" data-scroll="about" data-translate="about__menu-about">Обо мне</a>
 				</li>
 				<li>
-					<a href="#skills" data-translate="about__menu-skills">Навыки</a>
+					<a href="#skills" data-scroll="skills" data-translate="about__menu-skills">Навыки</a>
 				</li>
 				<li>
-					<a href="#resume" data-translate="about__menu-resume">Резюме</a>
+					<a href="#resume" data-scroll="resume" data-translate="about__menu-resume">Резюме</a>
 				</li>
 				<li>
-					<a href="#portfolio" data-translate="about__menu-portfolio">Портфолио</a>
+					<a href="#portfolio" data-scroll="portfolio" data-translate="about__menu-portfolio">Портфолио</a>
 				</li>
 				<li>
-					<a href="#contacts" data-translate="about__menu-contacts">Контакты</a>
+					<a href="#contacts" data-scroll="contacts" data-translate="about__menu-contacts">Контакты</a>
 				</li>
 			</ul>
 		</header>
@@ -77,9 +77,9 @@
 				<div data-translate="aspirations__hobbies-description"><p>В&nbsp;свободное от&nbsp;работы время люблю играть с&nbsp;друзьями в&nbsp;волейбол, кататься на&nbsp;велосипеде по&nbsp;городу, играть на&nbsp;гитаре и&nbsp;узнавать что-то новое о&nbsp;научных открытиях.</p></div>
 			</div>
 		</div>
-		<main class="about__main">
+		<main class="about__main" id="about">
 			<div class="about__main__photo"><div class="photo album"></div></div>
-			<div class="about__main__description"><a name="about"></a>
+			<div class="about__main__description">
 				<h2 data-translate="about__me__h2">Обо мне</h2>
 				<div data-translate="about__me__description">
 					<p>Меня зовут Дмитрий Бруслик, я&nbsp;занимаюсь Frontend разработкой. Родился в&nbsp;1990 году в&nbsp;Днепропетровске, с&nbsp;1993 переехал в&nbsp;Славутич, с&nbsp;2007 живу в&nbsp;Киеве. В&nbsp;10&nbsp;лет пошел в&nbsp;музыкальную школу по&nbsp;классу гитары, и&nbsp;с&nbsp;тех пор музыка преследует меня везде.</p>
@@ -109,11 +109,11 @@
 			</div>
 		</main>
 	</section>
-	<section class="skills container">
-		<div class="skills__description"><a name="skills"></a>
+	<section class="skills container" id="skills">
+		<div class="skills__description">
 			<h2 data-translate="skills__h2">Мои навыки</h2>
 			<div data-translate="skills__description"><p>Ниже представлен перечень технологий с&nbsp;которыми я дружу. Я&nbsp;не&nbsp;претендую на&nbsp;звание ходячей энциклопедии, но&nbsp;одно из&nbsp;моих сильных качеств&nbsp;— это любознательность. Я&nbsp;интересуюсь всем по&nbsp;чуть-чуть, но&nbsp;профессионалом быть хочу в&nbsp;чем-то одном&nbsp;&mdash; во&nbsp;фронтенд разработке.</p><p>Кроме представленных технологий я&nbsp;так&nbsp;же слегка касался Ajax, тестирования с&nbsp;Chai/Mocha, Linux (Ubuntu, Kali), ReactJS + Redax + Routing. В&nbsp;будущем я&nbsp;планирую полноценно освоить&nbsp;эти технологии.</p></div>
-			<a href="#contacts" class="btn-cta" data-translate="skills__btn-cta">Связаться со&nbsp;мной</a>
+			<button class="btn-cta" data-scroll="contacts" data-translate="skills__btn-cta">Связаться со&nbsp;мной</button>
 		</div>
 		<ul class="skills__list">
 			<li>
@@ -158,7 +158,7 @@
 		</ul>
 	</section>
 	<section class="resume" id="resume">
-		<div class="resume__download container"><a name="resume"></a>
+		<div class="resume__download container">
 			<h2 data-translate="resume__h2">Резюме</h2>
 			<div data-translate="resume__description"><p>Кстати! Чуть не&nbsp;забыл. Вы&nbsp;можете так&nbsp;же скачать для удобства RTF версию резюме.</p></div>
 			<a class="btn-cta" href="bruslik.dmitry-Frontend-developer.rtf" data-translate="resume__btn-cta">Скачать</a>
@@ -318,7 +318,7 @@
 			</ul>
 		</div>
 	</section>
-	<section class="portfolio container" id="portfolio"><a name="portfolio"></a>
+	<section class="portfolio container" id="portfolio">
 		<h2 data-translate="portfolio__h2">Портфолио</h2>
 		<div data-translate="portfolio__description"><p>Здесь представлены некоторые из&nbsp;моих работ.</p></div>
 		<div class="wrap">
@@ -326,7 +326,7 @@
 			<div class="portfolio_item"><a href="https://github.com/DmitryPacificAtion/hydrocolon" target="__blank" class="hydrocolon"></a></div>
 		</div>
 	</section>
-	<section class="contacts container" id="contacts"><a name="contacts"></a></div>
+	<section class="contacts container" id="contacts">
 		<div class="contacts__data">
 			<h2 data-translate="contacts__h2">Связаться со&nbsp;мной</h2>
 			<div class="contacts__description" data-translate="contacts__description"><p>Заполните форму, и&nbsp;ваше сообщение незамедлительно придет на&nbsp;мою почту.</p></div>
@@ -351,10 +351,10 @@
 			<li class="socials-icons"><a href="skype:dmitry.bruslik?add" class="skype"></a></li>
 		</ul>
 	</footer>
-	<div class="go-up"><a href="#menu"></a></div>
+	<div class="go-up"></div>
 	<div class="error" id="error"></div>
-	<script src="build/translates/data-translate.js"></script>
 	<script src="build/js/jquery-3.2.1.min.js"></script>
+	<script src="build/translates/data-translate.js"></script>
 	<script src="build/js/main.js"></script>
 </body>
 </html>

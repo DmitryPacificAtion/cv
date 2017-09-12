@@ -59,7 +59,7 @@
 .error.show {
 	display: block;
 }
-@media screen and (min-width: $mob-lan) {
+@media screen and (min-width: $480) {
 	.position { 
 		width: 420px;
 		&-wrap {
@@ -83,11 +83,11 @@
 			height: 20px;
 		}
 		&__level {
-			padding-top: 2px;
+			padding-top: 1px;
 		}
 	}
 }
-@media screen and (min-width: $pda) {
+@media screen and (min-width: $768) {
 	.aspirations {
 		display: flex;
 		flex-flow: row;
@@ -154,7 +154,7 @@
 		}
 	}
 }
-@media screen and (min-width: $pda-lan) {
+@media screen and (min-width: $1024) {
 	.position {
 		margin-bottom: 200px;
 		&-wrap {
@@ -228,7 +228,7 @@
 		}
 	}
 }
-@media screen and (min-width: $desktop) {
+@media screen and (min-width: $1280) {
 	.wallpaper {
 		height: 800px;
 	}

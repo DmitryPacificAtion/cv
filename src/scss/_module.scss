@@ -142,7 +142,7 @@
 		background-color: $dark-txt;
 		display: none;
 		position: absolute;
-		top: 50px;
+		top: 49px;
 		&_item {
 			height: 35px;
 			text-align: center;
@@ -415,25 +415,25 @@ footer {
 		}
 	}
 }
-// .go-up {
-// 	bottom: 20px;
-// 	display: none;
-// 	background-color: $darkest;
-// 	border-radius: 50%;
-// 	height: 50px;
-// 	position: fixed;
-// 	right: 20px;
-// 	width: 50px;
-// 	&:after {
-// 		color: $dark-txt;
-// 		content: '\f062';
-// 		font-family: 'FontAwesome';
-// 		font-size: 22px;
-// 		position: relative;
-// 		top: 14px;
-// 		left: 14px;
-// 	}
-// }
+.go-up {
+	bottom: 20px;
+	display: none;
+	background-color: $darkest;
+	border-radius: 50%;
+	height: 50px;
+	position: fixed;
+	right: 20px;
+	width: 50px;
+	&:after {
+		color: $dark-txt;
+		content: '\f062';
+		font-family: 'FontAwesome';
+		font-size: 22px;
+		position: relative;
+		top: 14px;
+		left: 14px;
+	}
+}
 .error {
 	background-color: crimson;
 	color: white;
