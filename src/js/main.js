@@ -43,18 +43,6 @@ function dropdown(elem, target, statfull = false) {
 dropdown(burger, menu);
 dropdown(language, languageList, true);
 
-/*
-$(document).ready(function(){
-    $('.go_to').click( function(){ // ловим клик по ссылке с классом go_to
-	var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
-        if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
-	    $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 500); // анимируем скроолинг к элементу scroll_el
-        }
-	    return false; // выключаем стандартное действие
-    });
-});
-*/
-
 // Слайдер
 var sliderContentItems = document.querySelectorAll('.slider__content_item');
 var sliderDotsItems = document.querySelectorAll('.slider__dots_item');
@@ -173,42 +161,41 @@ for (var i = 0; i < inputs.length; i++) {
 // 	xhr.send(formData);
 // }
 
-// Скрол первого экрана
-var positionWrap = document.querySelector(".position .position-wrap");
-var about = document.getElementById("about");
-positionWrap.lastElementChild.addEventListener('click', function() {
-	// var aboutHeight = about.firstElementChild.scrollHeight;
-	var aboutHeight = about.clientHeight;
-	var i = 0;
-	var sti = setInterval(function(){
-		i += 5;
-		console.log('i ', i);
-		console.log('about.offsetTop ', about.offsetTop);
-		window.scrollBy(0, i);
-		if (i >= aboutHeight) {
-			clearInterval(sti);
-		}
-	}, 50);
-});
-/** TODO:
-	- Написать плавный скролл
-	*/
+// Скрол
+$('*[data-scroll]').map( function() {
+	$(this).on('click', function(e) {
+		scrollTo(e, $(this).attr('data-scroll'));
+	});
+})
 
 // Скролл наверх
-	// var goup = document.querySelector('.go-up');
-	// var menu = document.getElementById('menu');
-	
-	// window.onscroll = function() {
-	// 	if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700)
-	// 		goup.classList.add("active");
-	// 	else
-	// 		goup.classList.remove("active");
-	// };
+var goup = $('.go-up');
 
-	// goup.addEventListener('click', function(e){
-	// 	e.preventDefault;
-	// 	menu.scrollIntoView({ behavior: "smooth"});
-	// })
+window.onscroll = function() {
+	if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 700)
+		goup.addClass("active");
+	else
+		goup.removeClass("active");
+};
+
+goup.on('click', function(e){
+	e.preventDefault;
+	scrollTo(e, 'menu');
+})
+
+function scrollTo(e, attr){
+	e.target.prevetnDefault;
+	$('html, body').animate({ scrollTop: $('#'+attr).offset().top }, 500);
+}
+
+//Hover Button 
+// var buttons = $('.btn-cta');
+// buttons.map(function(e){
+// 	$(this).focus( function(){
+// 		console.log($(this).height());
+// 		console.log($(this).width());
+// 	});
+// });
 
 // Мультиязычность
 var elements = document.querySelectorAll('[data-translate]');
@@ -217,8 +204,11 @@ for (var i = 0; i < dataLang.length; i++) {
 	dataLang[i].addEventListener('click', function(e) {
 		var currentLang = e.target.getAttribute('data-lang');
 		var currentDate = new Date();
+
+		// Записываем в куки
 		currentDate.setFullYear(currentDate.getFullYear() + 1, currentDate.getMonth(), currentDate.getDate(), currentDate.getHours(), currentDate.getMinutes())
 		document.cookie = 'path=/, expires=' + currentDate + ', lang=' + currentLang;
+
 		// Инициализируем флаг для масисва перевода
 		if(currentLang === 'en') {
 			var flag = 1;
@@ -230,7 +220,6 @@ for (var i = 0; i < dataLang.length; i++) {
 		}
 		translate(flag);
 		document.querySelector('[data-translate="resume__btn-cta"]').setAttribute('href', link);
-		
 	});
 }
 function translate(flag){

@@ -424,14 +424,14 @@ footer {
 	position: fixed;
 	right: 20px;
 	width: 50px;
+	text-align: center;
 	&:after {
 		color: $dark-txt;
 		content: '\f062';
 		font-family: 'FontAwesome';
 		font-size: 22px;
 		position: relative;
-		top: 14px;
-		left: 14px;
+		top: 8px;
 	}
 }
 .error {

@@ -19,7 +19,12 @@ error.innerText=ru;if(btnLang.innerText==='en')
 error.innerText=en;}
 for(var i=0;i<inputs.length;i++){inputs[i].addEventListener('blur',function(elem){if(validate(elem.srcElement)){elem.srcElement.style.cssText='border: 1px solid red';isValide=false;}
 else{elem.srcElement.style.cssText='border: none';error.classList.remove('show');isValide=true;}});}
-var positionWrap=document.querySelector(".position .position-wrap");var about=document.getElementById("about");positionWrap.lastElementChild.addEventListener('click',function(){var aboutHeight=about.clientHeight;var i=0;var sti=setInterval(function(){i+=5;console.log('i ',i);console.log('about.offsetTop ',about.offsetTop);window.scrollBy(0,i);if(i>=aboutHeight){clearInterval(sti);}},50);});var elements=document.querySelectorAll('[data-translate]');var dataLang=document.querySelectorAll('[data-lang]');for(var i=0;i<dataLang.length;i++){dataLang[i].addEventListener('click',function(e){var currentLang=e.target.getAttribute('data-lang');var currentDate=new Date();currentDate.setFullYear(currentDate.getFullYear()+1,currentDate.getMonth(),currentDate.getDate(),currentDate.getHours(),currentDate.getMinutes())
+$('*[data-scroll]').map(function(){$(this).on('click',function(e){scrollTo(e,$(this).attr('data-scroll'));});})
+var goup=$('.go-up');window.onscroll=function(){if(document.body.scrollTop>1200||document.documentElement.scrollTop>700)
+goup.addClass("active");else
+goup.removeClass("active");};goup.on('click',function(e){e.preventDefault;scrollTo(e,'menu');})
+function scrollTo(e,attr){e.target.prevetnDefault;$('html, body').animate({scrollTop:$('#'+attr).offset().top},500);}
+var buttons=$('.btn-cta');buttons.map(function(e){$(this).focus(function(){console.log(this);});});var elements=document.querySelectorAll('[data-translate]');var dataLang=document.querySelectorAll('[data-lang]');for(var i=0;i<dataLang.length;i++){dataLang[i].addEventListener('click',function(e){var currentLang=e.target.getAttribute('data-lang');var currentDate=new Date();currentDate.setFullYear(currentDate.getFullYear()+1,currentDate.getMonth(),currentDate.getDate(),currentDate.getHours(),currentDate.getMinutes())
 document.cookie='path=/, expires='+currentDate+', lang='+currentLang;if(currentLang==='en'){var flag=1;var link='bruslik.dmitry-Frontend-developer-en.rtf';}
 else{var flag=0;var link='bruslik.dmitry-Frontend-developer.rtf';}
 translate(flag);document.querySelector('[data-translate="resume__btn-cta"]').setAttribute('href',link);});}

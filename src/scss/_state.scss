@@ -53,9 +53,14 @@
 		}
 	}
 }
-// .go-up.active {
-// 	display: block;
-// }
+.go-up {
+	&.active {
+		display: block;
+	}
+	&:hover {
+		cursor: pointer;
+	}
+}
 .error.show {
 	display: block;
 }
