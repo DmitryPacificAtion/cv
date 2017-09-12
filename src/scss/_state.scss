@@ -59,7 +59,7 @@
 .error.show {
 	display: block;
 }
-@media screen and (min-width: $480) {
+@media screen and (min-width: $p480) {
 	.position { 
 		width: 420px;
 		&-wrap {
@@ -87,7 +87,7 @@
 		}
 	}
 }
-@media screen and (min-width: $768) {
+@media screen and (min-width: $p768) {
 	.aspirations {
 		display: flex;
 		flex-flow: row;
@@ -154,7 +154,7 @@
 		}
 	}
 }
-@media screen and (min-width: $1024) {
+@media screen and (min-width: $p1024) {
 	.position {
 		margin-bottom: 200px;
 		&-wrap {
@@ -228,7 +228,7 @@
 		}
 	}
 }
-@media screen and (min-width: $1280) {
+@media screen and (min-width: $p1280) {
 	.wallpaper {
 		height: 800px;
 	}
