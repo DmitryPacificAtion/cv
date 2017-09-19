@@ -101,41 +101,41 @@ var dataTranslate = {
 	'work__description': 
 		['<p>Опыт работы представлен в&nbsp;хронологическом порядке, т.е. самая свежая информация в&nbsp;самом низу.</p>', 
 		'<p>The work experience is&nbsp;presented in&nbsp;chronological order, i.e. The latest information at&nbsp;the very bottom.</p>'],
-	'work__petrovskogo': ['Киевский завод автоматики имени Г. И. Петровского', 'Kiev Plant of Automation named G.I. Petrovsky'],
-	'work__petrovskogo__total': ['7&nbsp;месяцев', '7&nbsp;month'],
-	'work__petrovskogo__description': 
-		['<p>Работал регулировщиком радиоэлектронных приборов (III&nbsp;разряд). Проверял гироскопические приборы согласно&nbsp;ТУ и&nbsp;сдавал в&nbsp;отдел контроля качества. После защиты диплома в&nbsp;университете, понял что хочу работать в&nbsp;IT.</p>',
-		'<p>I&nbsp;worked as&nbsp;a&nbsp;regulator of&nbsp;radio electronic devices (III&nbsp;category). I&nbsp;checked the gyroscopic devices according to&nbsp;the specifications and handed over to&nbsp;the quality control department. After graduation at&nbsp;the university, I&nbsp;realized that&nbsp;I want to&nbsp;work in&nbsp;IT.</p>'],
-	'work__fotos': ['f.ua', 'f.ua'],
-	'work__fotos__total': ['13&nbsp;месяцев', '13&nbsp;month'],
-	'work__fotos__description': 
-		['<p>Вначале работал контент менеджером. В&nbsp;обязанности входило поиск достоверных источников информации о товарах, наполнение сайта контентом для различных групп товаров. ' +
-		'После нескольких месяцев работы мне доверили обязанность по отделу: редактировать инструкций в формате PDF и вносить их в карточки товаров. ' +
-		'Чуть позже я перешел в SEO отдел, где стал помощником оптимизатора. Я составлял семантическое ядро, мета-теги и работал со ссылочной массой.', 
-		'<p>At&nbsp;first&nbsp;I worked as&nbsp;a&nbsp;content manager. My&nbsp;job was to&nbsp;find reliable sources of&nbsp;information about products, filling the site with content for different groups of&nbsp;products. After several months of&nbsp;work, I&nbsp;was entrusted with the duty of&nbsp;the department: edit instructions in&nbsp;PDF format and submit them to&nbsp;the card catalog.</p>' +
-		'<p>Later, I&nbsp;moved to&nbsp;the SEO department, where&nbsp;I became an&nbsp;assistant of&nbsp;SEO specialist. I&nbsp;made a&nbsp;semantic core, meta tags and worked with links.</p>'],
-	'work__beryozin': ['Студия Александра Берёзина', ''],
-	'work__beryozin__total': ['11&nbsp;месяцев', '11&nbsp;month'],
-	'work__beryozin__description': 
-		['<p>Работал Junior SEO специалистом. В&nbsp;обязанности входило:</p>' +
-		'<ul class="content-list">' +
-		'<li>&mdash;&nbsp;Сбор семантического ядра и&nbsp;группировки по&nbsp;страницам.</li>' +
-		'<li>&mdash;&nbsp;Проводил работы по&nbsp;внутренней оптимизации сайта (настройка редиректов, текстовая оптимизация, перелинковка).</li>' +
-		'<li>&mdash;&nbsp;Работал с&nbsp;сервисами Serpstat, Ahrefs.</li>' +
-		'<li>&mdash;&nbsp;Составление ТЗ&nbsp;копирайтеру, верстальщику, программисту.</li>' +
-		'<li>&mdash;&nbsp;Подключал сервисы аналитики и&nbsp;метрики, регистрировал в&nbsp;каталогах (Dmoz, Яндекс.Каталог), социальных сетях, Google Maps и&nbsp;Яндекс Картах.</li>' +
-		'<li>&mdash;&nbsp;Составление предложений по&nbsp;повышению удобства пользования сайтом.</li>' +
-		'</ul>', 
-		'<p>Worked as&nbsp;an&nbsp;Junior SEO specialist. My&nbsp;duties included:</p>' +
-		'<ul class="content-list">' +
-		'<li>&mdash;&nbsp;Made a&nbsp;semantic core and grouping by&nbsp;pages.</li>' +
-		'<li>&mdash;&nbsp;Creating site structure.</li>' +
-		'<li>&mdash;&nbsp;Worked on&nbsp;internal optimization (setting up&nbsp;redirects, text optimization, links).</li>' +
-		'<li>&mdash;&nbsp;Worked Serpstat and Ahrefs services.</li>' +
-		'<li>&mdash;&nbsp;Making up&nbsp;task order request for copywriter, layout designer, programmer.</li>' +
-		'<li>&mdash;&nbsp;I&nbsp;connected analytics and metrics services, registered in&nbsp;directories (Dmoz, Yandex.Catalog), social networks, Google Maps and Yandex Maps.</li>' +
-		'<li>&mdash;&nbsp;Making up&nbsp;proposition for increase the usability of&nbsp;the site.</li>' +
-		'</ul>'],
+	// 'work__petrovskogo': ['Киевский завод автоматики имени Г. И. Петровского', 'Kiev Plant of Automation named G.I. Petrovsky'],
+	// 'work__petrovskogo__total': ['7&nbsp;месяцев', '7&nbsp;month'],
+	// 'work__petrovskogo__description': 
+	// 	['<p>Работал регулировщиком радиоэлектронных приборов (III&nbsp;разряд). Проверял гироскопические приборы согласно&nbsp;ТУ и&nbsp;сдавал в&nbsp;отдел контроля качества. После защиты диплома в&nbsp;университете, понял что хочу работать в&nbsp;IT.</p>',
+	// 	'<p>I&nbsp;worked as&nbsp;a&nbsp;regulator of&nbsp;radio electronic devices (III&nbsp;category). I&nbsp;checked the gyroscopic devices according to&nbsp;the specifications and handed over to&nbsp;the quality control department. After graduation at&nbsp;the university, I&nbsp;realized that&nbsp;I want to&nbsp;work in&nbsp;IT.</p>'],
+	// 'work__fotos': ['f.ua', 'f.ua'],
+	// 'work__fotos__total': ['13&nbsp;месяцев', '13&nbsp;month'],
+	// 'work__fotos__description': 
+	// 	['<p>Вначале работал контент менеджером. В&nbsp;обязанности входило поиск достоверных источников информации о товарах, наполнение сайта контентом для различных групп товаров. ' +
+	// 	'После нескольких месяцев работы мне доверили обязанность по отделу: редактировать инструкций в формате PDF и вносить их в карточки товаров. ' +
+	// 	'Чуть позже я перешел в SEO отдел, где стал помощником оптимизатора. Я составлял семантическое ядро, мета-теги и работал со ссылочной массой.', 
+	// 	'<p>At&nbsp;first&nbsp;I worked as&nbsp;a&nbsp;content manager. My&nbsp;job was to&nbsp;find reliable sources of&nbsp;information about products, filling the site with content for different groups of&nbsp;products. After several months of&nbsp;work, I&nbsp;was entrusted with the duty of&nbsp;the department: edit instructions in&nbsp;PDF format and submit them to&nbsp;the card catalog.</p>' +
+	// 	'<p>Later, I&nbsp;moved to&nbsp;the SEO department, where&nbsp;I became an&nbsp;assistant of&nbsp;SEO specialist. I&nbsp;made a&nbsp;semantic core, meta tags and worked with links.</p>'],
+	// 'work__beryozin': ['Студия Александра Берёзина', ''],
+	// 'work__beryozin__total': ['11&nbsp;месяцев', '11&nbsp;month'],
+	// 'work__beryozin__description': 
+	// 	['<p>Работал Junior SEO специалистом. В&nbsp;обязанности входило:</p>' +
+	// 	'<ul class="content-list">' +
+	// 	'<li>&mdash;&nbsp;Сбор семантического ядра и&nbsp;группировки по&nbsp;страницам.</li>' +
+	// 	'<li>&mdash;&nbsp;Проводил работы по&nbsp;внутренней оптимизации сайта (настройка редиректов, текстовая оптимизация, перелинковка).</li>' +
+	// 	'<li>&mdash;&nbsp;Работал с&nbsp;сервисами Serpstat, Ahrefs.</li>' +
+	// 	'<li>&mdash;&nbsp;Составление ТЗ&nbsp;копирайтеру, верстальщику, программисту.</li>' +
+	// 	'<li>&mdash;&nbsp;Подключал сервисы аналитики и&nbsp;метрики, регистрировал в&nbsp;каталогах (Dmoz, Яндекс.Каталог), социальных сетях, Google Maps и&nbsp;Яндекс Картах.</li>' +
+	// 	'<li>&mdash;&nbsp;Составление предложений по&nbsp;повышению удобства пользования сайтом.</li>' +
+	// 	'</ul>', 
+	// 	'<p>Worked as&nbsp;an&nbsp;Junior SEO specialist. My&nbsp;duties included:</p>' +
+	// 	'<ul class="content-list">' +
+	// 	'<li>&mdash;&nbsp;Made a&nbsp;semantic core and grouping by&nbsp;pages.</li>' +
+	// 	'<li>&mdash;&nbsp;Creating site structure.</li>' +
+	// 	'<li>&mdash;&nbsp;Worked on&nbsp;internal optimization (setting up&nbsp;redirects, text optimization, links).</li>' +
+	// 	'<li>&mdash;&nbsp;Worked Serpstat and Ahrefs services.</li>' +
+	// 	'<li>&mdash;&nbsp;Making up&nbsp;task order request for copywriter, layout designer, programmer.</li>' +
+	// 	'<li>&mdash;&nbsp;I&nbsp;connected analytics and metrics services, registered in&nbsp;directories (Dmoz, Yandex.Catalog), social networks, Google Maps and Yandex Maps.</li>' +
+	// 	'<li>&mdash;&nbsp;Making up&nbsp;proposition for increase the usability of&nbsp;the site.</li>' +
+	// 	'</ul>'],
 	'work__seostudio': ['SEO Studio', 'SEO Studio'],
 	'work__seostudio__total': ['7&nbsp;месяцев', '7&nbsp;month'],
 	'work__seostudio__description': 
@@ -147,7 +147,8 @@ var dataTranslate = {
 		'<li>&mdash;&nbsp;Создание структуры сайта.</li>' +
 		'<li>&mdash;&nbsp;Ведение ссылочных компаний.</li>' +
 		'<li>&mdash;&nbsp;Продвижение проектов под Россию, Украину, Казахстан.</li>' +
-		'<li>&mdash;&nbsp;Вел 10-15 проектов одновременно.</li>' +
+		'<li>&mdash;&nbsp;Имею опыт в&nbsp;ведении 10-15 проектов одновременно.</li>' +
+		'<li>&mdash;&nbsp;Имею опыт в&nbsp;настройка редиректов, SSL сетрификата, индексации сайта.</li>' +
 		'</ul>', 
 		'<p>Worked as&nbsp;an&nbsp;SEO specialist. My&nbsp;duties included:</p>' +
 		'<ul class="content-list">' +
@@ -157,6 +158,7 @@ var dataTranslate = {
 		'<li>&mdash;&nbsp;Management of&nbsp;links companies.</li>' +
 		'<li>&mdash;&nbsp;Promotion of&nbsp;projects for Russia, Ukraine, Kazakhstan.</li>' +
 		'<li>&mdash;&nbsp;Led 10-15 projects simultaneously.</li>' +
+		'<li>&mdash;&nbsp;I&nbsp;have experience in&nbsp;setting up&nbsp;redirects, SSL, site indexing.</li>' +
 		'</ul>'],
 	'work__agromat': ['Агромат', 'Agromat'],
 	'work__agromat__total': ['5&nbsp;месяцев', '5&nbsp;month'],
