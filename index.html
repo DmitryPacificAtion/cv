@@ -146,7 +146,7 @@
 				<h3>Bootstrap, Foundation</h3><div class="wrap"><div class="skills__level frameworks"></div></div>
 			</li>
 			<li>
-				<h3>Email codding</h3><div class="wrap"><div class="skills__level email"></div></div>
+				<h3>Email markup</h3><div class="wrap"><div class="skills__level email"></div></div>
 			</li>
 			<li>
 				<h3>Wordpress, Joomla</h3><div class="wrap"><div class="skills__level cms"></div></div>
@@ -202,11 +202,12 @@
 					<h3 data-translate="work__ukrvet">Укрвет</h3>
 					<p class="activity-period">12.2016 — 07.2017</p>
 					<hr>
-					<div class="institution__description" data-translate="work__ukrvet__description"><p>Занимаемая должность: руководитель контент отдела. В&nbsp;обязанности входило:</p>
+					<div class="institution__description" data-translate="work__ukrvet__description"><p>Занимаемая должность: Frontend разработчик / руководитель контент отдела. В&nbsp;обязанности входило:</p>
 						<ul class="content-list">
 							<li>&mdash;&nbsp;Курирование переезда сайта с&nbsp;платформы prom.ua на&nbsp;платформу horoshop.com.ua.</li>
-							<li>&mdash;&nbsp;Создание лендинга для нового направления товаров.</li>
-							<li>&mdash;&nbsp;Постановка и&nbsp;контроль выполнения задач, а&nbsp;так&nbsp;же помощь членам команды в&nbsp;профессиональном росте.</li>
+							<li>&mdash;&nbsp;Создание лендинга с нуля для нового направления товаров.</li>
+							<li>&mdash;&nbsp;Верстка email писем.</li>
+							<li>&mdash;&nbsp;Постановка и&nbsp;контроль выполнения задач по контенту, а&nbsp;так&nbsp;же помощь членам команды в&nbsp;профессиональном росте.</li>
 						</ul>
 					</div>
 				</li>
@@ -269,8 +270,8 @@
 				</li>
 			</ul>
 			<ul class="slider__dots">
-				<li class="slider__dots_item active" data-slider-dot="1"><button></button></li>
-				<li class="slider__dots_item" data-slider-dot="2"><button></button></li>
+				<li class="slider__dots_item " data-slider-dot="1"><button></button></li>
+				<li class="slider__dots_item active" data-slider-dot="2"><button></button></li>
 				<li class="slider__dots_item" data-slider-dot="3"><button></button></li>
 				<li class="slider__dots_item" data-slider-dot="4"><button></button></li>
 				<li class="slider__dots_item" data-slider-dot="5"><button></button></li>
@@ -281,8 +282,18 @@
 		<h2 data-translate="portfolio__h2">Портфолио</h2>
 		<div data-translate="portfolio__description"><p>Здесь представлены некоторые из&nbsp;моих работ.</p></div>
 		<div class="wrap">
-			<div class="portfolio_item"><a href="https://github.com/DmitryPacificAtion/cv" class="cv-site"></a></div>
-			<div class="portfolio_item"><a href="https://github.com/DmitryPacificAtion/hydrocolon" target="__blank" class="hydrocolon"></a></div>
+			<div class="portfolio_item">
+				<a href="#this" class="cv-site portfolio_item__prevew"></a>
+				<!-- <a href="https://github.com/DmitryPacificAtion/cv" class="git"></a> -->
+			</div>
+			<div class="portfolio_item">
+				<a href="./hydrocolon" target="__blank" class="hydrocolon portfolio_item__prevew"></a>
+				<!-- <a href="https://github.com/DmitryPacificAtion/cv" class="git"></a> -->
+			</div>
+			<div class="portfolio_item">
+				<a href="./sophia" target="__blank" class="sophia portfolio_item__prevew"></a>
+				<!-- <a href="https://github.com/DmitryPacificAtion/cv" class="git"></a> -->
+			</div>
 		</div>
 	</section>
 	<section class="contacts container" id="contacts">
@@ -314,6 +325,6 @@
 	<script src="https://use.fontawesome.com/81b0a5a4d5.js"></script>
 	<script src="build/translates/data-translate.js"></script>
 	<script src="build/js/jquery-3.2.1.min.js"></script>
-	<script src="src/js/main.js"></script>
+	<script src="build/js/main.js"></script>
 </body>
 </html>

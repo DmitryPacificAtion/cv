@@ -178,16 +178,18 @@ var dataTranslate = {
 	'work__ukrvet': ['Укрвет', 'Ukrvet'],
 	'work__ukrvet__total': ['7&nbsp;месяцев', '7&nbsp;month'],
 	'work__ukrvet__description': 
-		['<p>Занимаемая должность: руководитель контент отдела. В&nbsp;обязанности входило:</p>' +
+		['<p>Занимаемая должность: Frontend разработчик / руководитель контент отдела. В&nbsp;обязанности входило:</p>' +
 		'<ul class="content-list">' +
 		'<li>&mdash;&nbsp;Курирование переезда сайта с&nbsp;платформы prom.ua на&nbsp;платформу horoshop.com.ua.</li>' +
-		'<li>&mdash;&nbsp;Создание лендинга для нового направления товаров.</li>' +
-		'<li>&mdash;&nbsp;Постановка и&nbsp;контроль выполнения задач, а&nbsp;так&nbsp;же помощь членам команды в&nbsp;профессиональном росте.</li>' +
+		'<li>&mdash;&nbsp;Создание лендинга с нуля для нового направления товаров.</li>' +
+		'<li>&mdash;&nbsp;Верстка email писем.</li>' +
+		'<li>&mdash;&nbsp;Постановка и&nbsp;контроль выполнения задач по контенту, а&nbsp;так&nbsp;же помощь членам команды в&nbsp;профессиональном росте.</li>' +
 		'</ul>', 
-		'<p>Worked as&nbsp;a&nbsp;head of&nbsp;content department. My&nbsp;duties included:</p>' +
+		'<p>Worked as&nbsp; Frontend developer / a&nbsp;head of&nbsp;content department. My&nbsp;duties included:</p>' +
 		'<ul class="content-list">' +
 		'<li>&mdash;&nbsp;Supervising the relocation of&nbsp;the site from the prom.ua platform to&nbsp;the horoshop.com.ua platform.</li>' +
-		'<li>&mdash;&nbsp;Creating a&nbsp;landing for a&nbsp;new direction of&nbsp;goods.</li>' +
+		'<li>&mdash;&nbsp;Creating a&nbsp;landing page for a&nbsp;new direction of&nbsp;goods frome zero.</li>' +
+		'<li>&mdash;&nbsp;Markuping email letters.</li>' +
 		'<li>&mdash;&nbsp;Delegation and control of&nbsp;tasks, assistance to&nbsp;team members in&nbsp;professional growth.</li>' +
 		'</ul>'],
 	'philosophy__h2': ['Несколько философских мыслей', 'Several philosophical thoughts'],
