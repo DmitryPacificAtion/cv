@@ -250,8 +250,10 @@
 		&__content {
 			margin-bottom: 20px;
 			margin-top: 20px;
+			overflow: hidden;
 			&_item {
 				display: none;
+				transform: translateX(100%);
 				blockquote > p {
 					&:before, &:after {
 						color: $grey-txt;
@@ -334,6 +336,9 @@
 			}
 			&.hydrocolon {
 				background-image: url('../img/hydrocolon.jpg');
+			}
+			&.sophia {
+				background-image: url('../img/sophia.jpg');
 			}
 		}
 	}

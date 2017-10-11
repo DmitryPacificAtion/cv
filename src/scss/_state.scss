@@ -39,7 +39,14 @@
 	.slider {
 		&__content {
 			&_item.active {
+				transform: translateX(0%); 
 				display: block;
+			}
+			&_item.slide-left {
+				transform: translateX(-100%); 
+			}
+			&_item.slide-right {
+				transform: translateX(100%); 
 			}
 		}
 		&__dots {

@@ -66,8 +66,8 @@ window.opener = null;
 		this.start = function() {
 			findActive();
 			setEventsOnSlider();
-			setInterval( startSider, 4500 );
-			clearInterval( startSider );
+			// setInterval( startSider, 4500 );
+			// clearInterval( startSider );
 		}
 	}
 	new Slider().start();
